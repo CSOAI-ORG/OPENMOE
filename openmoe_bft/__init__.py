@@ -22,6 +22,8 @@ Public API
                      expert_covenants, SEVERITY_PENALTY, NO_ACTION_BASELINE
 - Red team (Exp #9): AttackStrategy, AttackResult, RedTeamReport,
                      RedTeamOrchestrator, STRATEGIES, default_orchestrator
+- A2A compliance:    AgentCard, TaskEnvelope, A2AComplianceVerdict,
+                     extract_evidence, validate_card, validate_task, seal_verdict
 - Safety experts:    EXPERTS, SafetyExpert, ExpertDomain, by_id, by_domain,
                      by_regulation, expert_ids
 - Registration:      register_expert, RegistrationResult
@@ -112,6 +114,15 @@ from .red_team import (
     STRATEGIES,
     default_orchestrator,
 )
+from .a2a import (
+    AgentCard,
+    TaskEnvelope,
+    A2AComplianceVerdict,
+    extract_evidence,
+    validate_card,
+    validate_task,
+    seal_verdict,
+)
 from .experts import (
     EXPERTS,
     SafetyExpert,
@@ -201,6 +212,14 @@ __all__ = [
     "RedTeamOrchestrator",
     "STRATEGIES",
     "default_orchestrator",
+    # a2a (compliance capstone: Layer 11 ∩ Layer 8)
+    "AgentCard",
+    "TaskEnvelope",
+    "A2AComplianceVerdict",
+    "extract_evidence",
+    "validate_card",
+    "validate_task",
+    "seal_verdict",
     # experts
     "EXPERTS",
     "SafetyExpert",

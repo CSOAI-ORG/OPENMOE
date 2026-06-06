@@ -25,19 +25,20 @@ Modes: **cleanroom** = reimplemented from papers/specs (no code copied) ·
 | **Tencent Agent Memory** (Layer 4 / SOV3) | TencentCloud/TencentDB-Agent-Memory (MIT) | cleanroom | `openmoe_bft/memory.py` — L0→L3 pyramid (raw→atom→scenario→persona), plug-in distill/consolidate/aggregate, `dream()` consolidation + L0 compaction (idempotent), lexical recall | published architecture |
 | **Nobulex** covenants + trust | arian-gogani/nobulex (MIT) | cleanroom | `openmoe_bft/covenants.py` — covenant inscription, action audit, breach severity, web-of-trust `trust_score()` + propagation; `expert_covenants()` maps the 14 experts | published PROTOCOL |
 | **PyRIT + RedAmon** red-team (Expert #9) | microsoft/PyRIT + samugit83/redamon (both MIT) | cleanroom | `openmoe_bft/red_team.py` — 8 attack strategies (Crescendo/BargIn/IDOR-BOLA/BFLA…) across 5 categories, `RedTeamOrchestrator`, severity-weighted `risk_score`, `to_a2a_evidence` → `metadata.redTeamReport` | PyRIT + RedAmon, attribution in docstring |
+| **A2A Protocol** compliance (Layer 11∩8) | a2aproject/A2A (Apache-2.0) | integrate | `openmoe_bft/a2a.py` — AgentCard/Task validation vs EU AI Act via eu_ai_act + 14-expert coverage, `seal_verdict`→receipt | A2A spec shape only |
 
-Stdlib-first; 131 tests across the eight absorption modules. "Debate refines, BFT decides"; "every expert is a safety expert"; every decision sealable as a verifiable receipt.
+Stdlib-first; 142 tests across the nine absorption modules. **All EAT-NOW + integrate targets from the recon are absorbed.** "Debate refines, BFT decides"; "every expert is a safety expert"; every decision sealable as a verifiable receipt.
 
 ## Queued 🍴 (verified EAT-NOW — real, permissive, valuable)
 
 | Target | Source | License | Mode | Plan |
 |---|---|---|---|---|
 
-## Integrate-on-top 🔵
+## Integrate-on-top 🔵 — DONE
 
-| Target | Source | License | Plan |
+| Target | Source | License | Status |
 |---|---|---|---|
-| **A2A Protocol** | a2aproject/A2A | Apache-2.0 | Don't fork. Build `meok-a2a-compliance` validating A2A tasks vs EU AI Act; extract AgentCard JSON Schema as the data contract. |
+| **A2A Protocol** | a2aproject/A2A | Apache-2.0 | ✅ `openmoe_bft/a2a.py` — `validate_card`/`validate_task` run an AgentCard's metadata through `eu_ai_act.evaluate()` + 14-expert coverage; `seal_verdict` → receipt. Spec NOT forked; only AgentCard/Task shape reproduced. |
 
 ## Skip 🔴 (spec was wrong / not worth it)
 
@@ -51,4 +52,4 @@ Stdlib-first; 131 tests across the eight absorption modules. "Debate refines, BF
 - **Agent4Debate** — GPL-3.0. Cleanroom from the paper; never copy the code.
 
 ---
-*Verified 2026-06-06. Absorbed (8): ByzFL, Agent4Debate, OpenMoE router, AIR Blackbox (EU AI Act), Signet (receipts), Tencent Agent Memory (SOV3), Nobulex (covenants/trust), PyRIT+RedAmon (Expert #9 red-team). Next: A2A (integrate-on-top → meok-a2a-compliance).*
+*Verified 2026-06-06. Absorbed (9): ByzFL, Agent4Debate, OpenMoE router, AIR Blackbox (EU AI Act), Signet (receipts), Tencent Agent Memory (SOV3), Nobulex (covenants/trust), PyRIT+RedAmon (Expert #9), A2A (compliance capstone). The recon's entire EAT-NOW + integrate list is now eaten. Remaining recon items were SKIP/monitor.*

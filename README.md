@@ -246,6 +246,27 @@ print(report.risk_score)                       # 1.0 = all defended, 0.0 = all l
 print(orch.to_a2a_evidence(report))            # -> {"metadata": {"redTeamReport": {...}}}
 ```
 
+## A2A compliance (Layer 11 ∩ Layer 8 — the capstone)
+
+`openmoe_bft.a2a` is the integration layer: it validates
+[A2A](https://github.com/a2aproject/A2A) (Apache-2.0) AgentCards / Task payloads
+against the EU AI Act — without forking the spec. It flattens a card's
+`metadata` into evidence, runs it through `eu_ai_act.evaluate()`, checks all 14
+experts' `a2a_field`s are present, and (optionally) seals the verdict as a
+receipt. This is where interoperability meets the compliance gateway.
+
+```python
+from openmoe_bft import AgentCard, validate_card
+
+card = AgentCard(name="acme-agent", description="", version="1",
+                 url="https://acme/agent", capabilities={}, skills=[],
+                 metadata={"riskAssessment": {...}, "humanOversight": True})
+verdict = validate_card(card)
+print(verdict.compliant)         # EU AI Act compliant AND no expert gaps
+print(verdict.experts_missing)   # which of the 14 experts lack evidence
+print(verdict.advisory)          # what to add to pass
+```
+
 ## The 14 OpenScore safety experts
 
 | ID | Name | Domain | Regulation | A2A field |
