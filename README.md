@@ -124,6 +124,43 @@ assert result.consensus and result.agreed_hash == "A"
 print(result.debate.transcript)                 # full (id, message) log
 ```
 
+## MoE base routing (Layer 1)
+
+`openmoe_bft.moe` is the sparse router the whole stack sits on — cleanroom from
+the OpenMoE paper ([arXiv:2402.01739](https://arxiv.org/abs/2402.01739)) plus
+Switch/GShard top-k gating and Shazeer et al. (2017) noisy gating. Pure stdlib,
+no copied code (the upstream repo ships no license). The BFT layer above makes
+this routing Byzantine-robust; `aggregators` robustly combines several routers'
+logits.
+
+```python
+from openmoe_bft import SparseMoERouter
+
+router = SparseMoERouter(num_experts=4, k=2, capacity_factor=1.25)
+result = router.route([[2.0, 0.1, 0.1, 0.1],     # token 0 -> expert 0
+                       [0.1, 0.1, 3.0, 0.1]])     # token 1 -> expert 2
+print(result.assignments)            # per-token [(expert, weight), ...]
+print(result.load_balancing_loss)    # Switch aux loss; 1.0 == perfectly balanced
+print(result.dropped)                # tokens dropped to capacity overflow
+```
+
+## EU AI Act check backend (Expert #1)
+
+`openmoe_bft.eu_ai_act` is Expert #1's embeddable check core — 19 checks across
+Articles 9–15 of Regulation (EU) 2024/1689, cleanroom from the regulation text
+(full enforcement **2026-08-02**). The production MCP server is the
+`eu-ai-act-compliance-mcp` flagship; this is the in-process registry.
+
+```python
+from openmoe_bft import evaluate
+
+report = evaluate({"metadata.riskAssessment": True,
+                   "metadata.humanOversight": True})
+print(report.score)              # severity-weighted 0.0–1.0
+print(report.blocking_failures)  # failed blocker checks
+print(report.compliant)          # True only when no blockers fail
+```
+
 ## The 14 OpenScore safety experts
 
 | ID | Name | Domain | Regulation | A2A field |

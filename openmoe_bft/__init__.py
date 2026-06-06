@@ -10,6 +10,10 @@ Public API
 - Robust aggregation: coordinate_wise_median, trimmed_mean, krum, multi_krum,
                      robust_route
 - Debate consensus:  DebateRound, DebateResult, run_debate
+- MoE base routing:  softmax, top_k_gating, noisy_top_k_gating,
+                     load_balancing_loss, SparseMoERouter, RoutingResult
+- EU AI Act checks:  Article, Check, CHECKS, ComplianceReport, evaluate,
+                     checks_for_article, checks_by_severity
 - Safety experts:    EXPERTS, SafetyExpert, ExpertDomain, by_id, by_domain,
                      by_regulation, expert_ids
 - Registration:      register_expert, RegistrationResult
@@ -40,6 +44,23 @@ from .debate import (
     DebateRound,
     DebateResult,
     run_debate,
+)
+from .moe import (
+    softmax,
+    top_k_gating,
+    noisy_top_k_gating,
+    load_balancing_loss,
+    SparseMoERouter,
+    RoutingResult,
+)
+from .eu_ai_act import (
+    Article,
+    Check,
+    CHECKS,
+    ComplianceReport,
+    evaluate,
+    checks_for_article,
+    checks_by_severity,
 )
 from .experts import (
     EXPERTS,
@@ -77,6 +98,21 @@ __all__ = [
     "DebateRound",
     "DebateResult",
     "run_debate",
+    # moe (base-model routing, Layer 1)
+    "softmax",
+    "top_k_gating",
+    "noisy_top_k_gating",
+    "load_balancing_loss",
+    "SparseMoERouter",
+    "RoutingResult",
+    # eu_ai_act (Expert #1 check backend)
+    "Article",
+    "Check",
+    "CHECKS",
+    "ComplianceReport",
+    "evaluate",
+    "checks_for_article",
+    "checks_by_severity",
     # experts
     "EXPERTS",
     "SafetyExpert",

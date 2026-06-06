@@ -19,15 +19,15 @@ Modes: **cleanroom** = reimplemented from papers/specs (no code copied) ·
 |---|---|---|---|---|---|
 | **ByzFL** robust aggregators | LPD-EPFL/byzfl | MIT | cleanroom | `openmoe_bft/aggregators.py` — Krum, MultiKrum, trimmed-mean, coordinate-median + `robust_route()` | Blanchard et al. NeurIPS 2017 (Krum); Yin et al. ICML 2018 (trimmed mean) |
 | **Agent4Debate** debate protocol | zhangyiqun018/agent-for-debate | **GPL-3.0 → no-vendor** | cleanroom | `openmoe_bft/debate.py` — debate-rounds-as-consensus, final claims → BFT ledger | ICASSP 2026 paper (not the GPL code) |
+| **OpenMoE** sparse router (Layer 1) | XueFuzhao/OpenMoE | **NO LICENSE → no-vendor** | cleanroom | `openmoe_bft/moe.py` — stable softmax, top-k + noisy gating, Switch load-balance loss, `SparseMoERouter` w/ capacity | OpenMoE arXiv:2402.01739; Switch (Fedus 2022); Shazeer 2017 |
+| **AIR Blackbox** EU AI Act checks (Expert #1) | airblackbox/gateway (Apache-2.0, ref only) | cleanroom from regulation | cleanroom | `openmoe_bft/eu_ai_act.py` — 19 checks Art 9-15, severity-weighted `evaluate()` → `ComplianceReport` | Regulation (EU) 2024/1689 |
 
-Both stdlib-only; 27 tests; "debate refines, BFT decides."
+Stdlib-only; 70 tests across the four absorption modules. "Debate refines, BFT decides"; "every expert is a safety expert."
 
 ## Queued 🍴 (verified EAT-NOW — real, permissive, valuable)
 
 | Target | Source | License | Mode | Plan |
 |---|---|---|---|---|
-| **OpenMoE** router | XueFuzhao/OpenMoE | **NO LICENSE → no-vendor** | cleanroom | `SparseMLP` top-k/noisy gating from arXiv:2402.01739 → `openmoe_bft/moe.py`. HF weights (OrionZheng) are separately Apache-2.0. |
-| **AIR Blackbox** | airblackbox/gateway | Apache-2.0 | vendor | 51 EU AI Act checks (Art 9-15) + AI-BOM → Expert #1 backend; `pip install air-blackbox`, has MCP server. |
 | **Signet** | Prismer-AI/signet | Apache+MIT | vendor | Ed25519 + SHA-256 hash-chain receipts → audit/receipt layer (Layer 9). |
 | **Nobulex** | arian-gogani/nobulex | MIT | vendor/adapter | Covenant pre-commitment + breach propagation → OpenScore trust score. |
 | **Tencent Agent Memory** | TencentCloud/TencentDB-Agent-Memory | MIT | adapter | L0→L3 memory pyramid as SOV3 backend (Layer 4); −61% tokens. |
@@ -52,4 +52,4 @@ Both stdlib-only; 27 tests; "debate refines, BFT decides."
 - **Agent4Debate** — GPL-3.0. Cleanroom from the paper; never copy the code.
 
 ---
-*Verified 2026-06-06. Next bites by value: OpenMoE router (cleanroom), then AIR Blackbox (vendor, Expert #1).*
+*Verified 2026-06-06. Absorbed so far: ByzFL, Agent4Debate, OpenMoE router, AIR Blackbox (EU AI Act). Next bites by value: Signet (receipts), then Tencent Agent Memory (SOV3 backend).*
