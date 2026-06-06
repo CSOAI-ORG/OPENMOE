@@ -205,6 +205,28 @@ print(stats.token_savings_ratio)              # measured compaction
 print(mem.recall("EU hosting", k=3))          # top-k across tiers
 ```
 
+## Covenants & web-of-trust (trust score)
+
+`openmoe_bft.covenants` absorbs [Nobulex](https://github.com/arian-gogani/nobulex)
+(MIT) — an agent **inscribes a covenant** (pre-commits to a set of allowed
+actions + constraints) *before* acting; every action is audited against it, and
+breaches degrade a **web-of-trust** reputation score. Backs the OpenScore trust
+score; each of the 14 experts maps to a covenant (`expert_covenants`), and every
+inscription/breach is sealable as a receipt. Pure stdlib.
+
+```python
+from openmoe_bft import CovenantRegistry, Covenant, Action
+
+reg = CovenantRegistry()
+reg.inscribe(Covenant(covenant_id="", agent_id="expert-1",
+                      allowed_actions=frozenset({"audit:metadata.riskAssessment"}),
+                      constraints={"max_cost_usd": 1.0}, timestamp=1000,
+                      inscription_hash=""))
+breach = reg.record(Action("a1", "expert-1", "exfiltrate", {}, 1001))  # not allowed
+print(breach.severity)                 # "critical"
+print(reg.trust_score("expert-1"))     # dropped from 1.0
+```
+
 ## The 14 OpenScore safety experts
 
 | ID | Name | Domain | Regulation | A2A field |

@@ -18,6 +18,8 @@ Public API
                      sign_ed25519, verify_ed25519
 - Memory (Layer 4):  MemoryPyramid, MemoryEvent, Atom, Scenario, PersonaTrait,
                      RecallHit, DreamStats, L0, L1, L2, L3, ALL_TIERS
+- Covenants/trust:   Covenant, Action, Breach, CovenantRegistry,
+                     expert_covenants, SEVERITY_PENALTY, NO_ACTION_BASELINE
 - Safety experts:    EXPERTS, SafetyExpert, ExpertDomain, by_id, by_domain,
                      by_regulation, expert_ids
 - Registration:      register_expert, RegistrationResult
@@ -90,6 +92,15 @@ from .memory import (
     L2,
     L3,
     ALL_TIERS,
+)
+from .covenants import (
+    Covenant,
+    Action,
+    Breach,
+    CovenantRegistry,
+    expert_covenants,
+    SEVERITY_PENALTY,
+    NO_ACTION_BASELINE,
 )
 from .experts import (
     EXPERTS,
@@ -165,6 +176,14 @@ __all__ = [
     "L2",
     "L3",
     "ALL_TIERS",
+    # covenants (pre-commitment + web-of-trust score)
+    "Covenant",
+    "Action",
+    "Breach",
+    "CovenantRegistry",
+    "expert_covenants",
+    "SEVERITY_PENALTY",
+    "NO_ACTION_BASELINE",
     # experts
     "EXPERTS",
     "SafetyExpert",
