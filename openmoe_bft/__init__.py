@@ -16,6 +16,8 @@ Public API
                      checks_for_article, checks_by_severity
 - Receipts (Layer 9): Receipt, AuditChain, VerifyResult, sign_hmac, verify_hmac,
                      sign_ed25519, verify_ed25519
+- Memory (Layer 4):  MemoryPyramid, MemoryEvent, Atom, Scenario, PersonaTrait,
+                     RecallHit, DreamStats, L0, L1, L2, L3, ALL_TIERS
 - Safety experts:    EXPERTS, SafetyExpert, ExpertDomain, by_id, by_domain,
                      by_regulation, expert_ids
 - Registration:      register_expert, RegistrationResult
@@ -72,6 +74,22 @@ from .receipts import (
     verify_hmac,
     sign_ed25519,
     verify_ed25519,
+)
+from .memory import (
+    MemoryPyramid,
+    MemoryEvent,
+    Atom,
+    Scenario,
+    PersonaTrait,
+    RecallHit,
+    DreamStats,
+    tokenize,
+    overlap_score,
+    L0,
+    L1,
+    L2,
+    L3,
+    ALL_TIERS,
 )
 from .experts import (
     EXPERTS,
@@ -132,6 +150,21 @@ __all__ = [
     "verify_hmac",
     "sign_ed25519",
     "verify_ed25519",
+    # memory (Layer 4, SOV3 pyramid)
+    "MemoryPyramid",
+    "MemoryEvent",
+    "Atom",
+    "Scenario",
+    "PersonaTrait",
+    "RecallHit",
+    "DreamStats",
+    "tokenize",
+    "overlap_score",
+    "L0",
+    "L1",
+    "L2",
+    "L3",
+    "ALL_TIERS",
     # experts
     "EXPERTS",
     "SafetyExpert",

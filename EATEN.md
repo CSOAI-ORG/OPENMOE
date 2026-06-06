@@ -22,8 +22,9 @@ Modes: **cleanroom** = reimplemented from papers/specs (no code copied) ·
 | **OpenMoE** sparse router (Layer 1) | XueFuzhao/OpenMoE | **NO LICENSE → no-vendor** | cleanroom | `openmoe_bft/moe.py` — stable softmax, top-k + noisy gating, Switch load-balance loss, `SparseMoERouter` w/ capacity | OpenMoE arXiv:2402.01739; Switch (Fedus 2022); Shazeer 2017 |
 | **AIR Blackbox** EU AI Act checks (Expert #1) | airblackbox/gateway (Apache-2.0, ref only) | cleanroom from regulation | cleanroom | `openmoe_bft/eu_ai_act.py` — 19 checks Art 9-15, severity-weighted `evaluate()` → `ComplianceReport` | Regulation (EU) 2024/1689 |
 | **Signet** receipts (Layer 9) | Prismer-AI/signet (Apache-2.0/MIT) | reimpl (permissive) | `openmoe_bft/receipts.py` — SHA-256 hash-chain, HMAC-SHA256 signing (stdlib) + optional Ed25519 `[ed25519]` extra, bilateral co-sign, `AuditChain.verify()` tamper detection | Signet, attribution in docstring |
+| **Tencent Agent Memory** (Layer 4 / SOV3) | TencentCloud/TencentDB-Agent-Memory (MIT) | cleanroom | `openmoe_bft/memory.py` — L0→L3 pyramid (raw→atom→scenario→persona), plug-in distill/consolidate/aggregate, `dream()` consolidation + L0 compaction (idempotent), lexical recall | published architecture |
 
-Stdlib-first; 80 tests across the five absorption modules. "Debate refines, BFT decides"; "every expert is a safety expert"; every decision sealable as a verifiable receipt.
+Stdlib-first; 98 tests across the six absorption modules. "Debate refines, BFT decides"; "every expert is a safety expert"; every decision sealable as a verifiable receipt.
 
 ## Queued 🍴 (verified EAT-NOW — real, permissive, valuable)
 
@@ -52,4 +53,4 @@ Stdlib-first; 80 tests across the five absorption modules. "Debate refines, BFT 
 - **Agent4Debate** — GPL-3.0. Cleanroom from the paper; never copy the code.
 
 ---
-*Verified 2026-06-06. Absorbed so far: ByzFL, Agent4Debate, OpenMoE router, AIR Blackbox (EU AI Act), Signet (receipts). Next bites by value: Tencent Agent Memory (SOV3 backend), then Nobulex (covenants → trust score).*
+*Verified 2026-06-06. Absorbed: ByzFL, Agent4Debate, OpenMoE router, AIR Blackbox (EU AI Act), Signet (receipts), Tencent Agent Memory (SOV3). Next bites: Nobulex (covenants → trust score), then A2A (integrate-on-top: meok-a2a-compliance).*

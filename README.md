@@ -181,6 +181,30 @@ r1.payload["decision"] = "tampered" # mutate after the fact
 assert not chain.verify().ok        # tamper detected, .broken_at points to it
 ```
 
+## Hierarchical memory (Layer 4 / SOV3)
+
+`openmoe_bft.memory` absorbs
+[Tencent Agent Memory](https://github.com/TencentCloud/TencentDB-Agent-Memory)
+(MIT) — the **L0→L3 pyramid**: raw conversation → atomic facts → scenarios →
+durable persona traits. `dream()` is the overnight-learning pass that distills,
+consolidates, forms personas, and **compacts fully-distilled raw events** (the
+token-saving the spec advertises — computed honestly, not hardcoded). Promotion
+steps are plug-in callables, so an LLM or heuristic extractor swaps in behind the
+same interface; recall is lexical-overlap by default (vector backend plugs in the
+same way). Pure stdlib.
+
+```python
+from openmoe_bft import MemoryPyramid, MemoryEvent
+
+mem = MemoryPyramid()
+mem.observe(MemoryEvent(id="e1", timestamp=1000, role="user",
+                        content="prefers EU-hosted models", meta={}))
+stats = mem.dream(extractor=my_extractor, clusterer=my_clusterer,
+                  aggregator=my_aggregator)   # idempotent: re-running promotes 0
+print(stats.token_savings_ratio)              # measured compaction
+print(mem.recall("EU hosting", k=3))          # top-k across tiers
+```
+
 ## The 14 OpenScore safety experts
 
 | ID | Name | Domain | Regulation | A2A field |
