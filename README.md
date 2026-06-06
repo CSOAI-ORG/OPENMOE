@@ -161,6 +161,26 @@ print(report.blocking_failures)  # failed blocker checks
 print(report.compliant)          # True only when no blockers fail
 ```
 
+## Cryptographic receipts (Layer 9)
+
+`openmoe_bft.receipts` absorbs [Signet](https://github.com/Prismer-AI/signet)
+(Apache-2.0/MIT) — hash-chained, tamper-evident receipts so every BFT decision
+or x402 payment can be sealed and independently verified offline. SHA-256 chain
+links and HMAC-SHA256 signing are stdlib (zero deps); `pip install
+openmoe-bft[ed25519]` upgrades signing to Ed25519. Bilateral co-sign supported.
+
+```python
+from openmoe_bft import AuditChain
+
+chain = AuditChain()
+r0 = chain.append({"decision": "route->expert-1"}, trace_id="t1", timestamp=1000)
+r1 = chain.append({"decision": "settle x402"},      trace_id="t1", timestamp=1001)
+
+assert chain.verify().ok            # whole chain links + hashes check out
+r1.payload["decision"] = "tampered" # mutate after the fact
+assert not chain.verify().ok        # tamper detected, .broken_at points to it
+```
+
 ## The 14 OpenScore safety experts
 
 | ID | Name | Domain | Regulation | A2A field |

@@ -14,6 +14,8 @@ Public API
                      load_balancing_loss, SparseMoERouter, RoutingResult
 - EU AI Act checks:  Article, Check, CHECKS, ComplianceReport, evaluate,
                      checks_for_article, checks_by_severity
+- Receipts (Layer 9): Receipt, AuditChain, VerifyResult, sign_hmac, verify_hmac,
+                     sign_ed25519, verify_ed25519
 - Safety experts:    EXPERTS, SafetyExpert, ExpertDomain, by_id, by_domain,
                      by_regulation, expert_ids
 - Registration:      register_expert, RegistrationResult
@@ -61,6 +63,15 @@ from .eu_ai_act import (
     evaluate,
     checks_for_article,
     checks_by_severity,
+)
+from .receipts import (
+    Receipt,
+    AuditChain,
+    VerifyResult,
+    sign_hmac,
+    verify_hmac,
+    sign_ed25519,
+    verify_ed25519,
 )
 from .experts import (
     EXPERTS,
@@ -113,6 +124,14 @@ __all__ = [
     "evaluate",
     "checks_for_article",
     "checks_by_severity",
+    # receipts (Layer 9, audit & receipts)
+    "Receipt",
+    "AuditChain",
+    "VerifyResult",
+    "sign_hmac",
+    "verify_hmac",
+    "sign_ed25519",
+    "verify_ed25519",
     # experts
     "EXPERTS",
     "SafetyExpert",

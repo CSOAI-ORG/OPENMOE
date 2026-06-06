@@ -43,11 +43,14 @@ dependencies = []
 mcp = ["mcp>=1.0.0"]
 # x402 per-consensus / per-expert-call paywall (Empire Layer 10).
 x402 = ["x402>=0.1.0"]
+# Ed25519 cryptographic receipts (Empire Layer 9); HMAC-SHA256 is the
+# stdlib default, this upgrades signing to Ed25519.
+ed25519 = ["pynacl>=1.5.0"]
 dev = ["pytest>=7.0"]
 
 [project.urls]
 Homepage = "https://openmoe.ai"
-Repository = "https://github.com/meokai/openmoe-bft"
+Repository = "https://github.com/CSOAI-ORG/OPENMOE"
 Specification = "https://openscore.ai"
 
 [tool.setuptools.packages.find]

@@ -21,14 +21,14 @@ Modes: **cleanroom** = reimplemented from papers/specs (no code copied) ·
 | **Agent4Debate** debate protocol | zhangyiqun018/agent-for-debate | **GPL-3.0 → no-vendor** | cleanroom | `openmoe_bft/debate.py` — debate-rounds-as-consensus, final claims → BFT ledger | ICASSP 2026 paper (not the GPL code) |
 | **OpenMoE** sparse router (Layer 1) | XueFuzhao/OpenMoE | **NO LICENSE → no-vendor** | cleanroom | `openmoe_bft/moe.py` — stable softmax, top-k + noisy gating, Switch load-balance loss, `SparseMoERouter` w/ capacity | OpenMoE arXiv:2402.01739; Switch (Fedus 2022); Shazeer 2017 |
 | **AIR Blackbox** EU AI Act checks (Expert #1) | airblackbox/gateway (Apache-2.0, ref only) | cleanroom from regulation | cleanroom | `openmoe_bft/eu_ai_act.py` — 19 checks Art 9-15, severity-weighted `evaluate()` → `ComplianceReport` | Regulation (EU) 2024/1689 |
+| **Signet** receipts (Layer 9) | Prismer-AI/signet (Apache-2.0/MIT) | reimpl (permissive) | `openmoe_bft/receipts.py` — SHA-256 hash-chain, HMAC-SHA256 signing (stdlib) + optional Ed25519 `[ed25519]` extra, bilateral co-sign, `AuditChain.verify()` tamper detection | Signet, attribution in docstring |
 
-Stdlib-only; 70 tests across the four absorption modules. "Debate refines, BFT decides"; "every expert is a safety expert."
+Stdlib-first; 80 tests across the five absorption modules. "Debate refines, BFT decides"; "every expert is a safety expert"; every decision sealable as a verifiable receipt.
 
 ## Queued 🍴 (verified EAT-NOW — real, permissive, valuable)
 
 | Target | Source | License | Mode | Plan |
 |---|---|---|---|---|
-| **Signet** | Prismer-AI/signet | Apache+MIT | vendor | Ed25519 + SHA-256 hash-chain receipts → audit/receipt layer (Layer 9). |
 | **Nobulex** | arian-gogani/nobulex | MIT | vendor/adapter | Covenant pre-commitment + breach propagation → OpenScore trust score. |
 | **Tencent Agent Memory** | TencentCloud/TencentDB-Agent-Memory | MIT | adapter | L0→L3 memory pyramid as SOV3 backend (Layer 4); −61% tokens. |
 | **PyRIT** | microsoft/PyRIT | MIT | adapter | Orchestrator + attack strategies (Crescendo…) → Expert #9. |
@@ -52,4 +52,4 @@ Stdlib-only; 70 tests across the four absorption modules. "Debate refines, BFT d
 - **Agent4Debate** — GPL-3.0. Cleanroom from the paper; never copy the code.
 
 ---
-*Verified 2026-06-06. Absorbed so far: ByzFL, Agent4Debate, OpenMoE router, AIR Blackbox (EU AI Act). Next bites by value: Signet (receipts), then Tencent Agent Memory (SOV3 backend).*
+*Verified 2026-06-06. Absorbed so far: ByzFL, Agent4Debate, OpenMoE router, AIR Blackbox (EU AI Act), Signet (receipts). Next bites by value: Tencent Agent Memory (SOV3 backend), then Nobulex (covenants → trust score).*
