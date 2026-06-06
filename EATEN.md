@@ -24,15 +24,14 @@ Modes: **cleanroom** = reimplemented from papers/specs (no code copied) ·
 | **Signet** receipts (Layer 9) | Prismer-AI/signet (Apache-2.0/MIT) | reimpl (permissive) | `openmoe_bft/receipts.py` — SHA-256 hash-chain, HMAC-SHA256 signing (stdlib) + optional Ed25519 `[ed25519]` extra, bilateral co-sign, `AuditChain.verify()` tamper detection | Signet, attribution in docstring |
 | **Tencent Agent Memory** (Layer 4 / SOV3) | TencentCloud/TencentDB-Agent-Memory (MIT) | cleanroom | `openmoe_bft/memory.py` — L0→L3 pyramid (raw→atom→scenario→persona), plug-in distill/consolidate/aggregate, `dream()` consolidation + L0 compaction (idempotent), lexical recall | published architecture |
 | **Nobulex** covenants + trust | arian-gogani/nobulex (MIT) | cleanroom | `openmoe_bft/covenants.py` — covenant inscription, action audit, breach severity, web-of-trust `trust_score()` + propagation; `expert_covenants()` maps the 14 experts | published PROTOCOL |
+| **PyRIT + RedAmon** red-team (Expert #9) | microsoft/PyRIT + samugit83/redamon (both MIT) | cleanroom | `openmoe_bft/red_team.py` — 8 attack strategies (Crescendo/BargIn/IDOR-BOLA/BFLA…) across 5 categories, `RedTeamOrchestrator`, severity-weighted `risk_score`, `to_a2a_evidence` → `metadata.redTeamReport` | PyRIT + RedAmon, attribution in docstring |
 
-Stdlib-first; 114 tests across the seven absorption modules. "Debate refines, BFT decides"; "every expert is a safety expert"; every decision sealable as a verifiable receipt.
+Stdlib-first; 131 tests across the eight absorption modules. "Debate refines, BFT decides"; "every expert is a safety expert"; every decision sealable as a verifiable receipt.
 
 ## Queued 🍴 (verified EAT-NOW — real, permissive, valuable)
 
 | Target | Source | License | Mode | Plan |
 |---|---|---|---|---|
-| **PyRIT** | microsoft/PyRIT | MIT | adapter | Orchestrator + attack strategies (Crescendo…) → Expert #9. |
-| **RedAmon** | samugit83/redamon | MIT | adapter | Agentic network/API red-team, markdown skills → Expert #9 (complements PyRIT). |
 
 ## Integrate-on-top 🔵
 
@@ -52,4 +51,4 @@ Stdlib-first; 114 tests across the seven absorption modules. "Debate refines, BF
 - **Agent4Debate** — GPL-3.0. Cleanroom from the paper; never copy the code.
 
 ---
-*Verified 2026-06-06. Absorbed (7): ByzFL, Agent4Debate, OpenMoE router, AIR Blackbox (EU AI Act), Signet (receipts), Tencent Agent Memory (SOV3), Nobulex (covenants/trust). Next: PyRIT + RedAmon (Expert #9 red-team), A2A (integrate-on-top → meok-a2a-compliance).*
+*Verified 2026-06-06. Absorbed (8): ByzFL, Agent4Debate, OpenMoE router, AIR Blackbox (EU AI Act), Signet (receipts), Tencent Agent Memory (SOV3), Nobulex (covenants/trust), PyRIT+RedAmon (Expert #9 red-team). Next: A2A (integrate-on-top → meok-a2a-compliance).*

@@ -227,6 +227,25 @@ print(breach.severity)                 # "critical"
 print(reg.trust_score("expert-1"))     # dropped from 1.0
 ```
 
+## Red-team orchestration (Expert #9)
+
+`openmoe_bft.red_team` absorbs [PyRIT](https://github.com/microsoft/PyRIT) +
+[RedAmon](https://github.com/samugit83/redamon) (both MIT) — a pluggable
+attack-strategy registry + orchestrator that probes a target and scores its
+resilience. Backs OpenScore Expert #9 (Red Team) and feeds the EU AI Act Art 15
+cybersecurity check. Strategies are data bound to plug-in `probe` callables, so
+real LLM/HTTP attack backends slot in later. Pure stdlib.
+
+```python
+from openmoe_bft import default_orchestrator
+
+orch = default_orchestrator()                 # 8 strategies, 5 categories
+results = orch.run(target={"defended": {"RT-CRESCENDO"}})  # your probe target
+report = orch.report(results)
+print(report.risk_score)                       # 1.0 = all defended, 0.0 = all landed
+print(orch.to_a2a_evidence(report))            # -> {"metadata": {"redTeamReport": {...}}}
+```
+
 ## The 14 OpenScore safety experts
 
 | ID | Name | Domain | Regulation | A2A field |

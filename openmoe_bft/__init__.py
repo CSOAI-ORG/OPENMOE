@@ -20,6 +20,8 @@ Public API
                      RecallHit, DreamStats, L0, L1, L2, L3, ALL_TIERS
 - Covenants/trust:   Covenant, Action, Breach, CovenantRegistry,
                      expert_covenants, SEVERITY_PENALTY, NO_ACTION_BASELINE
+- Red team (Exp #9): AttackStrategy, AttackResult, RedTeamReport,
+                     RedTeamOrchestrator, STRATEGIES, default_orchestrator
 - Safety experts:    EXPERTS, SafetyExpert, ExpertDomain, by_id, by_domain,
                      by_regulation, expert_ids
 - Registration:      register_expert, RegistrationResult
@@ -101,6 +103,14 @@ from .covenants import (
     expert_covenants,
     SEVERITY_PENALTY,
     NO_ACTION_BASELINE,
+)
+from .red_team import (
+    AttackStrategy,
+    AttackResult,
+    RedTeamReport,
+    RedTeamOrchestrator,
+    STRATEGIES,
+    default_orchestrator,
 )
 from .experts import (
     EXPERTS,
@@ -184,6 +194,13 @@ __all__ = [
     "expert_covenants",
     "SEVERITY_PENALTY",
     "NO_ACTION_BASELINE",
+    # red team (Expert #9)
+    "AttackStrategy",
+    "AttackResult",
+    "RedTeamReport",
+    "RedTeamOrchestrator",
+    "STRATEGIES",
+    "default_orchestrator",
     # experts
     "EXPERTS",
     "SafetyExpert",
