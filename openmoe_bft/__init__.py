@@ -7,6 +7,9 @@ Public API
 ----------
 - BFT engine:        BFTConsensus, BFTLedger, quorum_size, tolerated_faults
 - BFT MoE routing:   BFTRouter, RoutingDecision, NoConsensusError, assignment_hash
+- Robust aggregation: coordinate_wise_median, trimmed_mean, krum, multi_krum,
+                     robust_route
+- Debate consensus:  DebateRound, DebateResult, run_debate
 - Safety experts:    EXPERTS, SafetyExpert, ExpertDomain, by_id, by_domain,
                      by_regulation, expert_ids
 - Registration:      register_expert, RegistrationResult
@@ -25,6 +28,18 @@ from .routing import (
     RoutingDecision,
     NoConsensusError,
     assignment_hash,
+)
+from .aggregators import (
+    coordinate_wise_median,
+    trimmed_mean,
+    krum,
+    multi_krum,
+    robust_route,
+)
+from .debate import (
+    DebateRound,
+    DebateResult,
+    run_debate,
 )
 from .experts import (
     EXPERTS,
@@ -52,6 +67,16 @@ __all__ = [
     "RoutingDecision",
     "NoConsensusError",
     "assignment_hash",
+    # aggregators
+    "coordinate_wise_median",
+    "trimmed_mean",
+    "krum",
+    "multi_krum",
+    "robust_route",
+    # debate
+    "DebateRound",
+    "DebateResult",
+    "run_debate",
     # experts
     "EXPERTS",
     "SafetyExpert",

@@ -76,6 +76,54 @@ result = register_expert(candidate)        # transport-agnostic, no network
 assert result.accepted and result.expert_id == 1
 ```
 
+## Robust aggregation
+
+When router replicas emit *numeric* per-expert score vectors (e.g. router
+logits) rather than discrete expert-key votes, `openmoe_bft.aggregators`
+provides the Byzantine-robust fusion rules absorbed from ByzFL (cleanroom,
+stdlib-only): `coordinate_wise_median`, `trimmed_mean`, `krum` / `multi_krum`,
+and a `robust_route` convenience that aggregates and returns the argmax expert.
+Up to `f` adversarial replicas cannot move the winner.
+
+```python
+from openmoe_bft import robust_route
+
+# 7 router replicas score 3 experts; 5 honest favour expert 0,
+# 2 Byzantine replicas scream for expert 2 with absurd values.
+honest = [[10.0, 0.0, 0.0]] * 5
+byzantine = [[-1e6, 0.0, 1e6], [-1e6, 0.0, 1e6]]
+scores = honest + byzantine                     # n=7, tolerate f=2
+
+expert = robust_route(scores, f=2, method="krum")
+assert expert == 0                              # Byzantine outliers ignored
+```
+
+References: Krum — Blanchard et al., NeurIPS 2017; coordinate-wise median /
+trimmed mean — Yin et al., ICML 2018.
+
+## Debate consensus
+
+`openmoe_bft.debate` absorbs Agent4Debate with the spec's twist —
+**debate refines positions, BFT decides.** Participants ("proposers", plain
+callables so any LLM backend plugs in later) argue over several rounds, each
+seeing the accumulated transcript; after the final round every participant's
+position is cast as a vote into the existing BFT ledger, and the same `2f+1`
+quorum engine settles it.
+
+```python
+from openmoe_bft import BFTLedger, run_debate
+
+def hold(claim):                                # a fixed-stance proposer
+    return lambda transcript: (claim, f"I argue for {claim}")
+
+proposers = {"p1": hold("A"), "p2": hold("A"),
+             "p3": hold("A"), "p4": hold("B")}  # n=4, quorum 3
+
+result = run_debate("debate-1", proposers, rounds=2, ledger=BFTLedger())
+assert result.consensus and result.agreed_hash == "A"
+print(result.debate.transcript)                 # full (id, message) log
+```
+
 ## The 14 OpenScore safety experts
 
 | ID | Name | Domain | Regulation | A2A field |
