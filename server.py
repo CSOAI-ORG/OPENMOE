@@ -111,7 +111,19 @@ def main() -> None:
 
     Referenced by ``package.json`` (``mcp.entry = "server:main"``) and usable
     as ``python -c "import server; server.main()"``.
+
+    Honours the ``HOST`` / ``PORT`` environment variables so the server can be
+    bound to a free port (e.g. by the e2e harness) without code changes. They
+    default to FastMCP's own defaults when unset.
     """
+    import os
+
+    host = os.environ.get("HOST")
+    if host:
+        mcp.settings.host = host
+    port = os.environ.get("PORT")
+    if port:
+        mcp.settings.port = int(port)
     mcp.run(transport="streamable-http")
 
 
