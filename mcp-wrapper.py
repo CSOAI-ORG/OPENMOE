@@ -66,5 +66,7 @@ async def health(request: Request) -> Response:
 
 
 if __name__ == "__main__":
-    mcp.settings.host = "0.0.0.0"
+    # Bind all interfaces: this wrapper only runs inside a container where the
+    # platform (Cloud Run / AgentCore) controls ingress and terminates TLS.
+    mcp.settings.host = "0.0.0.0"  # nosec B104 — intentional container bind
     mcp.run(transport="streamable-http")
