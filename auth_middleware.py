@@ -32,7 +32,24 @@ TOKEN_ENV = "OPENMOE_BFT_TOKEN"
 
 
 def _is_public(path: str, public_prefixes: Iterable[str]) -> bool:
-    return any(path == p or path.startswith(p) for p in public_prefixes)
+    # A path containing a parent reference can never be a *public* path: a raw
+    # ``/.well-known/../../mcp`` or ``/health/../mcp`` (forwarded un-normalised
+    # by some ASGI servers/proxies) would otherwise satisfy a naive
+    # ``startswith`` and bypass authentication on the gated tool routes.
+    if ".." in path.split("/"):
+        return False
+    for p in public_prefixes:
+        if path == p:
+            return True
+        # Only match a prefix at a path-segment boundary so ``/health`` does
+        # not whitelist ``/healthz`` / ``/health-internal`` etc. A trailing
+        # slash in the prefix (``/.well-known/``) already encodes the boundary.
+        if p.endswith("/"):
+            if path.startswith(p):
+                return True
+        elif path.startswith(p + "/"):
+            return True
+    return False
 
 
 def _extract_bearer(header_value: str) -> str | None:
