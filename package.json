@@ -1,0 +1,17 @@
+{
+  "name": "openmoe-bft",
+  "version": "0.1.0",
+  "description": "Byzantine-fault-tolerant consensus for MoE routing plus the OpenScore safety-expert governance layer exposed as MCP tools.",
+  "license": "Apache-2.0",
+  "homepage": "https://openmoe.ai",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CSOAI-ORG/OPENMOE"
+  },
+  "mcp": {
+    "entry": "server:main",
+    "transport": "streamable-http",
+    "command": "python",
+    "args": ["server.py"]
+  }
+}

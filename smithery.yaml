@@ -1,0 +1,32 @@
+# Smithery declarative manifest for openmoe-bft.
+# Declarative form: no `runtime:` block — tools are enumerated below so
+# Smithery can index capabilities without launching the server.
+name: openmoe-bft
+displayName: OpenMoE-BFT Compliance Server
+description: >-
+  Byzantine-fault-tolerant consensus for Mixture-of-Experts routing, plus the
+  OpenScore safety-expert governance layer (EU AI Act, A2A, red-team) exposed
+  as MCP tools.
+homepage: https://openmoe.ai
+license: Apache-2.0
+
+startCommand:
+  type: streamable-http
+
+tools:
+  - name: evaluate_eu_ai_act
+    description: >-
+      Score conformity evidence against the EU AI Act conformity checks and
+      return a severity-weighted ComplianceReport.
+  - name: validate_agent_card
+    description: >-
+      Validate an A2A Agent Card against the 14-safety-expert coverage contract
+      and EU AI Act scoring, returning a compliance verdict.
+  - name: red_team_scan
+    description: >-
+      Run the canonical adversarial strategy sweep against a target and return a
+      RedTeamReport with a 0..1 risk score.
+  - name: bft_quorum
+    description: >-
+      Compute Byzantine fault tolerance (f) and quorum size (2f+1) for an
+      n-node consensus cluster.

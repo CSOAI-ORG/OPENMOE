@@ -1,0 +1,21 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-07-09/server.schema.json",
+  "name": "io.github.csoai-org/openmoe-bft",
+  "description": "Byzantine-fault-tolerant consensus for MoE routing plus the OpenScore safety-expert governance layer (EU AI Act, A2A, red-team) as MCP tools.",
+  "version": "0.1.0",
+  "repository": {
+    "url": "https://github.com/CSOAI-ORG/OPENMOE",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "pypi",
+      "registryBaseUrl": "https://pypi.org",
+      "identifier": "openmoe-bft",
+      "version": "0.1.0",
+      "transport": {
+        "type": "streamable-http"
+      }
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "$schema": "https://glama.ai/mcp/schemas/server.json",
+  "name": "openmoe-bft",
+  "description": "Byzantine-fault-tolerant consensus for MoE routing plus the OpenScore safety-expert governance layer exposed as MCP tools.",
+  "maintainers": [
+    "CSOAI-ORG"
+  ],
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CSOAI-ORG/OPENMOE"
+  }
+}

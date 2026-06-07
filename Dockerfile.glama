@@ -1,0 +1,19 @@
+# Dockerfile for the Glama MCP registry — builds the openmoe-bft compliance
+# server and runs it over streamable-http via the mcp-wrapper entrypoint.
+FROM python:3.11-slim
+
+WORKDIR /app
+
+# Install the package (core lib + MCP server) plus the wrapper's web deps.
+COPY pyproject.toml README.md ./
+COPY openmoe_bft ./openmoe_bft
+COPY server.py auth_middleware.py mcp-wrapper.py ./
+
+RUN pip install --no-cache-dir . && \
+    pip install --no-cache-dir "uvicorn>=0.30" "starlette>=0.37"
+
+EXPOSE 8000
+
+# mcp-wrapper.py imports `mcp` from server.py, mounts the discovery routes,
+# and serves on streamable-http.
+CMD ["python", "mcp-wrapper.py"]
