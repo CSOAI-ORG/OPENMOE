@@ -1,11 +1,12 @@
 {
   "$schema": "https://glama.ai/mcp/schemas/server.json",
   "name": "openmoe-bft",
-  "description": "Byzantine-fault-tolerant consensus for MoE routing plus the OpenScore safety-expert governance layer exposed as MCP tools.",
+  "description": "EU AI Act compliance MCP server: scores high-risk AI system conformity against Articles 9-15, validates A2A Agent Cards, and runs red-team scans, with Byzantine-fault-tolerant (BFT) consensus over MoE routing. AI governance / agent compliance audit (DORA, NIS2, CRA aware).",
   "maintainers": [
     "CSOAI-ORG"
   ],
   "license": "Apache-2.0",
+  "homepage": "https://openmoe.ai",
   "repository": {
     "type": "git",
     "url": "https://github.com/CSOAI-ORG/OPENMOE"

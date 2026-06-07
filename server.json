@@ -1,12 +1,19 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-07-09/server.schema.json",
   "name": "io.github.csoai-org/openmoe-bft",
-  "description": "Byzantine-fault-tolerant consensus for MoE routing plus the OpenScore safety-expert governance layer (EU AI Act, A2A, red-team) as MCP tools.",
+  "description": "EU AI Act compliance MCP server: scores high-risk AI system conformity against Articles 9-15, validates A2A Agent Cards, runs red-team scans, and adds Byzantine-fault-tolerant (BFT) consensus over MoE routing. AI governance / agent compliance audit (DORA, NIS2, CRA aware).",
   "version": "0.1.0",
   "repository": {
     "url": "https://github.com/CSOAI-ORG/OPENMOE",
     "source": "github"
   },
+  "_deploymentNote": "The `remotes[0].url` below is a LAUNCH PLACEHOLDER. Set it to the real public streamable-http endpoint at deploy time before publishing to the MCP Registry. Remote-only listing (no published package) is registry-valid; the PyPI package below is an optional second install path and may be omitted if PyPI is not yet published.",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.openmoe.ai/mcp"
+    }
+  ],
   "packages": [
     {
       "registryType": "pypi",

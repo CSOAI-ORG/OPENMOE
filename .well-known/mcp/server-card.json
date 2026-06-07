@@ -1,15 +1,16 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-07-09/server.schema.json",
   "name": "openmoe-bft",
-  "description": "Byzantine-fault-tolerant consensus for MoE routing plus the OpenScore safety-expert governance layer (EU AI Act, A2A, red-team) exposed as MCP tools.",
+  "description": "EU AI Act compliance MCP server: scores high-risk AI system conformity against Articles 9-15, validates A2A Agent Cards, and runs red-team scans, with Byzantine-fault-tolerant (BFT) consensus over MoE routing. AI governance and agent compliance audit (DORA / NIS2 / CRA aware).",
   "version": "0.1.0",
   "vendor": "MEOK AI Labs",
   "homepage": "https://openmoe.ai",
   "repository": "https://github.com/CSOAI-ORG/OPENMOE",
   "protocolVersion": "2025-11-25",
+  "_deploymentNote": "transport.url is a LAUNCH PLACEHOLDER — set it to the real public streamable-http endpoint at deploy time.",
   "transport": {
     "type": "streamable-http",
-    "url": "http://localhost:8000/mcp"
+    "url": "https://mcp.openmoe.ai/mcp"
   },
   "capabilities": {
     "tools": {

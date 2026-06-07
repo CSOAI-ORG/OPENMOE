@@ -4,29 +4,64 @@
 name: openmoe-bft
 displayName: OpenMoE-BFT Compliance Server
 description: >-
-  Byzantine-fault-tolerant consensus for Mixture-of-Experts routing, plus the
-  OpenScore safety-expert governance layer (EU AI Act, A2A, red-team) exposed
-  as MCP tools.
+  EU AI Act compliance MCP server. Scores high-risk AI system conformity
+  against Articles 9-15, validates A2A Agent Cards, and runs red-team scans —
+  with Byzantine-fault-tolerant (BFT) consensus over Mixture-of-Experts
+  routing. AI governance and agent compliance audit, DORA / NIS2 / CRA aware.
+icon: icon.svg
 homepage: https://openmoe.ai
 license: Apache-2.0
 
+# System prompt: tells an agent when and how to reach for this server.
+systemPrompt: >-
+  Use openmoe-bft to audit an AI system or A2A agent for regulatory
+  compliance. Call evaluate_eu_ai_act to score conformity evidence against the
+  EU AI Act (Articles 9-15, high-risk obligations); validate_agent_card to
+  check an A2A Agent Card against the 14 safety-expert coverage contract;
+  red_team_scan to probe adversarial resilience for the Article 15
+  cybersecurity check; and bft_quorum for Byzantine fault-tolerance arithmetic.
+  All tools are read-only and side-effect-free.
+
+# Streamable-HTTP, bring-your-own-hosting. The endpoint URL is registered with
+# Smithery at deploy time (LAUNCH PLACEHOLDER: https://mcp.openmoe.ai/mcp).
 startCommand:
   type: streamable-http
+  # Optional connection config. All fields optional so the server connects with
+  # zero configuration; set apiKey only if the deployed endpoint requires auth.
+  configSchema:
+    type: object
+    properties:
+      apiKey:
+        type: string
+        title: API key
+        description: Optional bearer token if the deployed endpoint requires auth.
+    additionalProperties: false
 
 tools:
   - name: evaluate_eu_ai_act
+    title: Evaluate EU AI Act conformity
+    readOnlyHint: true
     description: >-
-      Score conformity evidence against the EU AI Act conformity checks and
-      return a severity-weighted ComplianceReport.
+      Score conformity evidence for a high-risk AI system against the EU AI Act
+      conformity checks (Articles 9-15) and return a severity-weighted
+      ComplianceReport with per-article results and an overall score.
   - name: validate_agent_card
+    title: Validate A2A Agent Card
+    readOnlyHint: true
     description: >-
       Validate an A2A Agent Card against the 14-safety-expert coverage contract
-      and EU AI Act scoring, returning a compliance verdict.
+      and EU AI Act scoring, returning a compliance verdict and the missing
+      experts needed to pass.
   - name: red_team_scan
+    title: Run red-team scan
+    readOnlyHint: true
     description: >-
       Run the canonical adversarial strategy sweep against a target and return a
-      RedTeamReport with a 0..1 risk score.
+      RedTeamReport with a 0..1 risk score (feeds the EU AI Act Article 15
+      cybersecurity check).
   - name: bft_quorum
+    title: Compute BFT quorum
+    readOnlyHint: true
     description: >-
       Compute Byzantine fault tolerance (f) and quorum size (2f+1) for an
       n-node consensus cluster.

@@ -1,7 +1,30 @@
 # openmoe-bft
 
-**Byzantine-fault-tolerant consensus for Mixture-of-Experts routing.**
+**EU AI Act compliance MCP server + Byzantine-fault-tolerant consensus for Mixture-of-Experts routing.**
 _Every expert is a safety expert._
+
+An **MCP server for AI governance and agent compliance audit**: score a
+high-risk AI system against the **EU AI Act** (Articles 9–15), validate **A2A
+Agent Cards**, run **red-team scans**, and add Byzantine-fault-tolerant (BFT)
+consensus over MoE routing. **DORA / NIS2 / CRA**-aware. 183 tests passing,
+Apache-2.0.
+
+## MCP tools
+
+Exposed over the streamable-http MCP transport (see `server.py`):
+
+| Tool | Description |
+|---|---|
+| `evaluate_eu_ai_act` | Score conformity evidence for a high-risk AI system against the EU AI Act conformity checks (Articles 9–15); returns a severity-weighted ComplianceReport. **Read-only.** |
+| `validate_agent_card` | Validate an A2A Agent Card against the 14-safety-expert coverage contract + EU AI Act scoring; returns a compliance verdict. **Read-only.** |
+| `red_team_scan` | Run the canonical adversarial strategy sweep against a target; returns a RedTeamReport with a 0..1 risk score (feeds the EU AI Act Article 15 cybersecurity check). **Read-only.** |
+| `bft_quorum` | Compute Byzantine fault tolerance (`f`) and quorum size (`2f+1`) for an n-node consensus cluster. **Read-only.** |
+
+```bash
+# Run the MCP server locally (streamable-http; defaults to :8000)
+pip install "openmoe-bft[mcp]"
+python server.py
+```
 
 A standard MoE gate picks an expert with a single trainable router — and a single
 compromised or buggy router can silently misroute a token to an unsafe expert.
