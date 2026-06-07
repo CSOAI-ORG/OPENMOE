@@ -1,6 +1,6 @@
 [build-system]
-requires = ["setuptools>=61.0", "wheel"]
-build-backend = "setuptools.build_meta"
+requires = ["hatchling"]
+build-backend = "hatchling.build"
 
 [project]
 name = "openmoe-bft"
@@ -34,9 +34,15 @@ classifiers = [
     "Topic :: Software Development :: Quality Assurance",
 ]
 
-# Core is stdlib-only by design: zero hard runtime dependencies so the
-# squat-to-real PyPI upgrade stays trivial.
-dependencies = []
+# The core library is stdlib-only by design, but the shipped MCP server
+# (server.py) needs the MCP SDK to expose the compliance tools over
+# streamable-http. Core modules still import fine without `mcp` installed.
+dependencies = [
+    "mcp>=1.0.0",
+]
+
+[project.scripts]
+openmoe-bft = "openmoe_bft.cli:main"
 
 [project.optional-dependencies]
 # MCP transport for the MCP -> Expert registration protocol (network/server side).
@@ -53,8 +59,10 @@ Homepage = "https://openmoe.ai"
 Repository = "https://github.com/CSOAI-ORG/OPENMOE"
 Specification = "https://openscore.ai"
 
-[tool.setuptools.packages.find]
-include = ["openmoe_bft*"]
+[tool.hatch.build.targets.wheel]
+# Ship the library package plus the root-level MCP server entrypoint, and
+# nothing else (no tests, dist, dotfiles) — keeps the wheel lean.
+only-include = ["openmoe_bft", "server.py"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
