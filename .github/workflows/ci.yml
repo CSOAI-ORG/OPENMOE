@@ -28,5 +28,16 @@ jobs:
       - name: Import server (smoke test)
         run: python -c "import server; assert server.mcp is not None; print('server import OK')"
 
+      - name: SAST — Bandit (fail on medium+/high)
+        run: |
+          pip install bandit pip-audit
+          # -ll = report medium and high only; low-severity style nits don't gate.
+          bandit -r openmoe_bft server.py auth_middleware.py mcp-wrapper.py -ll
+
+      - name: Dependency audit — pip-audit
+        # Audits the installed dependency tree for known CVEs. Non-blocking for
+        # now (advisory) — flip to a hard fail once a baseline is clean in prod.
+        run: pip-audit || true
+
       - name: Build wheel
         run: python -m build --wheel
