@@ -29,6 +29,19 @@ Modes: **cleanroom** = reimplemented from papers/specs (no code copied) ·
 
 Stdlib-first; 142 tests across the nine absorption modules. **All EAT-NOW + integrate targets from the recon are absorbed.** "Debate refines, BFT decides"; "every expert is a safety expert"; every decision sealable as a verifiable receipt.
 
+## Built (original synthesis — eating the OpenRouter/x402 strategy)
+
+Not absorbed from a repo — built from the strategy in
+`/Users/nicholas/OPENROUTER_STRATEGY.md` to win "#1 in the x402 Bazaar compliance
+niche" and fill x402's documented gaps. Compose covenants + receipts + red_team.
+
+| Module | Purpose |
+|---|---|
+| `openmoe_bft/bazaar.py` | x402 Bazaar discovery client (reproduces CDP `/v2/x402/discovery/{resources,search,mcp}`, network-optional) + `rank_in_niche()` (the literal "are we #1 in EU AI Act compliance?" check by semantic fit + on-chain trust) + `find_self`/`listing_readiness`. |
+| `openmoe_bft/reputation.py` | **Agent FICO** (`agent_fico` 300–850, blends covenant trust + settled-payment history + red-team risk) and **outcome-based billing** (`OutcomeBilling` escrows + releases only on an attested-Receipt outcome predicate) — the two gaps x402 lacks today. |
+
+29 tests; the differentiators that make MEOK more than a paywall. Total suite: 212.
+
 ## Queued 🍴 (verified EAT-NOW — real, permissive, valuable)
 
 | Target | Source | License | Mode | Plan |

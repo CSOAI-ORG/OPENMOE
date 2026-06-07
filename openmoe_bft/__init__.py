@@ -24,6 +24,10 @@ Public API
                      RedTeamOrchestrator, STRATEGIES, default_orchestrator
 - A2A compliance:    AgentCard, TaskEnvelope, A2AComplianceVerdict,
                      extract_evidence, validate_card, validate_task, seal_verdict
+- x402 Bazaar (L10): BazaarResource, BazaarClient, rank_in_niche,
+                     listing_readiness, NICHE_KEYWORDS
+- Agent reputation:  AgentScore, agent_fico, web_of_trust_score, OutcomeBilling,
+                     OutcomeSettlement (Agent-FICO + outcome-based billing)
 - Safety experts:    EXPERTS, SafetyExpert, ExpertDomain, by_id, by_domain,
                      by_regulation, expert_ids
 - Registration:      register_expert, RegistrationResult
@@ -123,6 +127,23 @@ from .a2a import (
     validate_task,
     seal_verdict,
 )
+from .bazaar import (
+    BazaarResource,
+    BazaarClient,
+    NICHE_KEYWORDS,
+    rank_in_niche,
+    listing_readiness,
+)
+from .reputation import (
+    AgentScore,
+    agent_fico,
+    web_of_trust_score,
+    OutcomeBilling,
+    OutcomeSettlement,
+    FICO_MIN,
+    FICO_MAX,
+    FICO_WEIGHTS,
+)
 from .experts import (
     EXPERTS,
     SafetyExpert,
@@ -220,6 +241,21 @@ __all__ = [
     "validate_card",
     "validate_task",
     "seal_verdict",
+    # x402 Bazaar discovery (Layer 10 — #1-position tooling)
+    "BazaarResource",
+    "BazaarClient",
+    "NICHE_KEYWORDS",
+    "rank_in_niche",
+    "listing_readiness",
+    # agent reputation (Agent FICO + outcome-based billing)
+    "AgentScore",
+    "agent_fico",
+    "web_of_trust_score",
+    "OutcomeBilling",
+    "OutcomeSettlement",
+    "FICO_MIN",
+    "FICO_MAX",
+    "FICO_WEIGHTS",
     # experts
     "EXPERTS",
     "SafetyExpert",
