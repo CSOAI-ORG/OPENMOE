@@ -1,0 +1,39 @@
+# openmoe-bft
+
+> Byzantine-fault-tolerant consensus for Mixture-of-Experts (MoE) routing, plus a 9-module EU-AI-Act / A2A compliance toolkit. Each routing decision is fanned out to N router replicas and dispatched only when a 2f+1 quorum agrees (f = floor((n-1)/3)). Apache-2.0, Python 3.10+, stdlib-only core, MCP server included. By MEOK AI Labs (CSOAI-ORG).
+
+## What it is
+
+openmoe-bft wraps every MoE routing decision in a Byzantine-fault-tolerant quorum so a single compromised or buggy router cannot silently misroute a token to an unsafe expert. It is the consensus + OpenScore 14-safety-expert governance layer of the open-source OpenMoE-BFT stack.
+
+## The 9 absorbed modules
+
+- BFT consensus: 2f+1 quorum over router replicas (BFTRouter, BFTLedger, quorum arithmetic).
+- Robust aggregation: coordinate-wise median, trimmed mean, Krum / Multi-Krum for numeric router-logit fusion.
+- Debate consensus: proposers refine positions across rounds, then the BFT ledger decides.
+- EU AI Act checks: 19 conformity checks across Articles 9-15 of Regulation (EU) 2024/1689.
+- Cryptographic receipts: hash-chained, tamper-evident receipts (HMAC-SHA256, optional Ed25519).
+- Hierarchical memory: L0-L3 pyramid with an overnight dream() consolidation pass.
+- Covenants & web-of-trust: agents pre-commit to allowed actions; breaches degrade a trust score.
+- Red-team orchestration: pluggable attack strategies that probe a target and score resilience (0..1).
+- A2A compliance: validate A2A Agent Cards against the EU AI Act and the 14 OpenScore safety experts.
+
+## Install
+
+- `pip install openmoe-bft` (core, stdlib-only)
+- `pip install "openmoe-bft[mcp]"` (MCP streamable-http server)
+- `pip install "openmoe-bft[x402]"` (x402 paywall)
+- `pip install "openmoe-bft[ed25519]"` (Ed25519 receipts)
+
+## MCP server
+
+Streamable-http transport, default endpoint http://localhost:8000/mcp. Tools: evaluate_eu_ai_act, validate_agent_card, red_team_scan, bft_quorum.
+
+## Links
+
+- PyPI: https://pypi.org/project/openmoe-bft/
+- GitHub: https://github.com/CSOAI-ORG/OPENMOE
+- Site: https://openmoe.ai
+- Full detail: https://openmoe.ai/llms-full.txt
+- License: Apache-2.0
+- Vendor: MEOK AI Labs / CSOAI-ORG (csoai.org, meok.ai, openscore.ai, proofof.ai, councilof.ai)

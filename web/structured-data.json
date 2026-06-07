@@ -1,0 +1,60 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://openmoe.ai/#software",
+      "name": "openmoe-bft",
+      "alternateName": "OpenMoE-BFT",
+      "applicationCategory": "DeveloperApplication",
+      "applicationSubCategory": "AI Governance & Compliance Toolkit",
+      "operatingSystem": "Cross-platform (Python 3.10+)",
+      "description": "Byzantine-fault-tolerant consensus for Mixture-of-Experts routing, plus an EU-AI-Act / A2A compliance toolkit. Wraps each MoE routing decision in a 2f+1 BFT quorum and ships nine absorbed modules: BFT consensus, robust aggregation, debate, EU AI Act checks, cryptographic receipts, hierarchical memory, covenants/web-of-trust, red-team orchestration, and A2A compliance.",
+      "url": "https://openmoe.ai",
+      "downloadUrl": "https://pypi.org/project/openmoe-bft/",
+      "softwareVersion": "0.1.0",
+      "programmingLanguage": "Python",
+      "license": "https://www.apache.org/licenses/LICENSE-2.0",
+      "softwareRequirements": "Python >= 3.10; core library is stdlib-only",
+      "keywords": "byzantine fault tolerance, mixture of experts, MoE routing, consensus, EU AI Act, AI governance, AI safety, compliance, A2A, agent2agent, MCP server, red team, robust aggregation, krum, trimmed mean, cryptographic receipts",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "author": {
+        "@id": "https://meok.ai/#organization"
+      },
+      "publisher": {
+        "@id": "https://meok.ai/#organization"
+      },
+      "featureList": [
+        "Byzantine-fault-tolerant (2f+1) quorum over MoE router replicas",
+        "Robust aggregation: coordinate-wise median, trimmed mean, Krum / Multi-Krum",
+        "Debate consensus that refines positions before the BFT ledger decides",
+        "EU AI Act conformity checks (19 checks across Articles 9-15 of Regulation (EU) 2024/1689)",
+        "Hash-chained, tamper-evident cryptographic receipts (HMAC-SHA256, optional Ed25519)",
+        "Hierarchical L0-L3 agent memory pyramid with overnight dream() consolidation",
+        "Covenants and web-of-trust reputation scoring",
+        "Red-team attack-strategy orchestration and resilience scoring",
+        "A2A Agent Card validation against the 14 OpenScore safety experts",
+        "MCP server over streamable-http exposing evaluate_eu_ai_act, validate_agent_card, red_team_scan, bft_quorum"
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://meok.ai/#organization",
+      "name": "MEOK AI Labs",
+      "alternateName": "CSOAI-ORG",
+      "url": "https://meok.ai",
+      "description": "MEOK AI Labs (CSOAI-ORG) builds open-source AI governance, safety, and compliance infrastructure: Byzantine-fault-tolerant routing, EU AI Act tooling, agent trust scoring, and the OpenScore safety-expert stack.",
+      "sameAs": [
+        "https://github.com/CSOAI-ORG",
+        "https://csoai.org",
+        "https://openscore.ai",
+        "https://proofof.ai",
+        "https://councilof.ai"
+      ]
+    }
+  ]
+}

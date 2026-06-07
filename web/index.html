@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<!-- Confirm canonical/og:url host once openmoe.ai is live (currently parked). -->
+<title>openmoe-bft — Byzantine-Fault-Tolerant Consensus for MoE Routing + EU AI Act Compliance</title>
+<link rel="canonical" href="https://openmoe.ai/" />
+<meta name="description" content="openmoe-bft wraps every Mixture-of-Experts routing decision in a Byzantine-fault-tolerant (2f+1) quorum, and ships an EU-AI-Act / A2A compliance toolkit: BFT, robust aggregation, debate, EU AI Act checks, cryptographic receipts, memory, covenants, red-team, and A2A. Apache-2.0, stdlib-only core, MCP server included." />
+<meta name="keywords" content="byzantine fault tolerance, mixture of experts, MoE routing, BFT consensus, EU AI Act, AI governance, AI safety, A2A compliance, MCP server, robust aggregation, krum, red team" />
+<meta name="author" content="MEOK AI Labs" />
+
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="openmoe-bft — MEOK AI Labs" />
+<meta property="og:title" content="openmoe-bft — Byzantine-Fault-Tolerant MoE Routing + EU AI Act Compliance" />
+<meta property="og:description" content="2f+1 Byzantine consensus over MoE router replicas, plus a 9-module EU-AI-Act / A2A compliance toolkit. Apache-2.0, stdlib-only core, MCP server included." />
+<meta property="og:url" content="https://openmoe.ai/" />
+<meta property="og:image" content="https://openmoe.ai/og-image.png" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="openmoe-bft — BFT consensus for MoE routing + EU AI Act compliance" />
+<meta name="twitter:description" content="Every expert is a safety expert. 2f+1 Byzantine quorum over MoE routing + 9-module compliance toolkit. Apache-2.0. pip install openmoe-bft" />
+<meta name="twitter:image" content="https://openmoe.ai/og-image.png" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://openmoe.ai/#software",
+      "name": "openmoe-bft",
+      "alternateName": "OpenMoE-BFT",
+      "applicationCategory": "DeveloperApplication",
+      "applicationSubCategory": "AI Governance & Compliance Toolkit",
+      "operatingSystem": "Cross-platform (Python 3.10+)",
+      "description": "Byzantine-fault-tolerant consensus for Mixture-of-Experts routing, plus an EU-AI-Act / A2A compliance toolkit. Wraps each MoE routing decision in a 2f+1 BFT quorum and ships nine absorbed modules: BFT consensus, robust aggregation, debate, EU AI Act checks, cryptographic receipts, hierarchical memory, covenants/web-of-trust, red-team orchestration, and A2A compliance.",
+      "url": "https://openmoe.ai",
+      "downloadUrl": "https://pypi.org/project/openmoe-bft/",
+      "softwareVersion": "0.1.0",
+      "programmingLanguage": "Python",
+      "license": "https://www.apache.org/licenses/LICENSE-2.0",
+      "softwareRequirements": "Python >= 3.10; core library is stdlib-only",
+      "keywords": "byzantine fault tolerance, mixture of experts, MoE routing, consensus, EU AI Act, AI governance, AI safety, compliance, A2A, agent2agent, MCP server, red team, robust aggregation, krum, trimmed mean, cryptographic receipts",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+      "author": { "@id": "https://meok.ai/#organization" },
+      "publisher": { "@id": "https://meok.ai/#organization" },
+      "featureList": [
+        "Byzantine-fault-tolerant (2f+1) quorum over MoE router replicas",
+        "Robust aggregation: coordinate-wise median, trimmed mean, Krum / Multi-Krum",
+        "Debate consensus that refines positions before the BFT ledger decides",
+        "EU AI Act conformity checks (19 checks across Articles 9-15 of Regulation (EU) 2024/1689)",
+        "Hash-chained, tamper-evident cryptographic receipts (HMAC-SHA256, optional Ed25519)",
+        "Hierarchical L0-L3 agent memory pyramid with overnight dream() consolidation",
+        "Covenants and web-of-trust reputation scoring",
+        "Red-team attack-strategy orchestration and resilience scoring",
+        "A2A Agent Card validation against the 14 OpenScore safety experts",
+        "MCP server over streamable-http exposing evaluate_eu_ai_act, validate_agent_card, red_team_scan, bft_quorum"
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://meok.ai/#organization",
+      "name": "MEOK AI Labs",
+      "alternateName": "CSOAI-ORG",
+      "url": "https://meok.ai",
+      "description": "MEOK AI Labs (CSOAI-ORG) builds open-source AI governance, safety, and compliance infrastructure: Byzantine-fault-tolerant routing, EU AI Act tooling, agent trust scoring, and the OpenScore safety-expert stack.",
+      "sameAs": [
+        "https://github.com/CSOAI-ORG",
+        "https://csoai.org",
+        "https://openscore.ai",
+        "https://proofof.ai",
+        "https://councilof.ai"
+      ]
+    }
+  ]
+}
+</script>
+
+<style>
+  :root { --bg:#0b0e14; --panel:#131822; --fg:#e6e9ef; --muted:#9aa4b2; --acc:#5b8cff; --acc2:#7dd3a8; --border:#222b3a; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; }
+  a { color:var(--acc); text-decoration:none; }
+  a:hover { text-decoration:underline; }
+  .wrap { max-width:920px; margin:0 auto; padding:0 20px; }
+  header { padding:64px 0 32px; border-bottom:1px solid var(--border); }
+  h1 { font-size:2.4rem; margin:0 0 8px; letter-spacing:-0.02em; }
+  .tag { color:var(--acc2); font-weight:600; }
+  .lead { font-size:1.2rem; color:var(--muted); max-width:680px; }
+  h2 { font-size:1.5rem; margin:48px 0 12px; letter-spacing:-0.01em; }
+  h3 { font-size:1.1rem; margin:24px 0 6px; }
+  section { border-bottom:1px solid var(--border); padding-bottom:24px; }
+  code, pre { font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; }
+  pre { background:var(--panel); border:1px solid var(--border); border-radius:10px; padding:16px; overflow-x:auto; font-size:0.9rem; }
+  code { background:var(--panel); padding:2px 6px; border-radius:5px; font-size:0.9em; }
+  pre code { background:none; padding:0; }
+  ul { padding-left:20px; }
+  table { width:100%; border-collapse:collapse; margin:12px 0; font-size:0.92rem; }
+  th, td { text-align:left; padding:8px 10px; border-bottom:1px solid var(--border); vertical-align:top; }
+  th { color:var(--muted); font-weight:600; }
+  .badges span { display:inline-block; background:var(--panel); border:1px solid var(--border); border-radius:999px; padding:3px 12px; margin:4px 6px 0 0; font-size:0.82rem; color:var(--muted); }
+  .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:14px; margin-top:12px; }
+  .card { background:var(--panel); border:1px solid var(--border); border-radius:10px; padding:14px 16px; }
+  .card h3 { margin-top:0; color:var(--fg); }
+  .card p { margin:6px 0 0; color:var(--muted); font-size:0.92rem; }
+  details { background:var(--panel); border:1px solid var(--border); border-radius:8px; padding:10px 14px; margin:8px 0; }
+  summary { cursor:pointer; font-weight:600; }
+  footer { padding:32px 0 64px; color:var(--muted); font-size:0.9rem; }
+  footer a { color:var(--fg); }
+  .cta { display:inline-block; background:var(--acc); color:#fff; padding:10px 18px; border-radius:8px; font-weight:600; margin-top:10px; }
+  .cta:hover { text-decoration:none; opacity:0.92; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <h1>openmoe-bft</h1>
+    <p class="lead"><span class="tag">Every expert is a safety expert.</span> Byzantine-fault-tolerant consensus for Mixture-of-Experts routing, plus a 9-module EU-AI-Act / A2A compliance toolkit.</p>
+    <div class="badges">
+      <span>Apache-2.0</span>
+      <span>Python 3.10+</span>
+      <span>stdlib-only core</span>
+      <span>183 tests</span>
+      <span>MCP server included</span>
+    </div>
+    <p><a class="cta" href="https://pypi.org/project/openmoe-bft/">pip install openmoe-bft</a></p>
+  </div>
+</header>
+
+<main class="wrap">
+
+<section>
+  <h2>What it is</h2>
+  <p>A standard MoE gate picks an expert with a single trainable router — and a single compromised or buggy router can silently misroute a token to an unsafe expert. <code>openmoe-bft</code> wraps the routing decision in a Byzantine-fault-tolerant (BFT) consensus protocol: the decision is fanned out to <strong>N router replicas</strong>, their proposals are hashed and voted, and the token is dispatched <strong>only</strong> when a <code>2f + 1</code> quorum agrees (<code>f = floor((n - 1) / 3)</code>). No quorum, no dispatch.</p>
+  <p>On top of consensus, openmoe-bft absorbs nine cleanroom modules into one toolkit for governing and certifying agentic AI systems — the consensus layer and the OpenScore 14-safety-expert governance layer of the open-source OpenMoE-BFT stack.</p>
+</section>
+
+<section>
+  <h2>The 9 modules</h2>
+  <div class="grid">
+    <div class="card"><h3>BFT consensus</h3><p>2f+1 quorum over router replicas; <code>BFTRouter</code>, <code>BFTLedger</code>, quorum arithmetic. No quorum, no dispatch.</p></div>
+    <div class="card"><h3>Robust aggregation</h3><p>Coordinate-wise median, trimmed mean, Krum / Multi-Krum for numeric router-logit fusion. Up to <code>f</code> adversaries can't move the winner.</p></div>
+    <div class="card"><h3>Debate consensus</h3><p>Proposers argue over rounds; positions refine, then the BFT ledger decides. Any LLM backend plugs in.</p></div>
+    <div class="card"><h3>EU AI Act checks</h3><p>19 conformity checks across Articles 9-15 of Regulation (EU) 2024/1689; severity-weighted compliance report.</p></div>
+    <div class="card"><h3>Cryptographic receipts</h3><p>Hash-chained, tamper-evident receipts (HMAC-SHA256, optional Ed25519). Seal and verify any decision offline.</p></div>
+    <div class="card"><h3>Hierarchical memory</h3><p>L0-L3 pyramid (raw → facts → scenarios → persona) with an overnight <code>dream()</code> consolidation pass.</p></div>
+    <div class="card"><h3>Covenants & trust</h3><p>Agents pre-commit to allowed actions; breaches degrade a web-of-trust reputation score.</p></div>
+    <div class="card"><h3>Red-team orchestration</h3><p>Pluggable attack-strategy registry that probes a target and scores its resilience (0..1 risk score).</p></div>
+    <div class="card"><h3>A2A compliance</h3><p>Validate A2A Agent Cards against the EU AI Act and the 14 OpenScore safety experts; seal the verdict.</p></div>
+  </div>
+</section>
+
+<section>
+  <h2>Install</h2>
+<pre><code>pip install openmoe-bft            # core: zero runtime dependencies (stdlib only)
+pip install "openmoe-bft[mcp]"     # + MCP transport for expert registration
+pip install "openmoe-bft[x402]"    # + x402 per-consensus / per-expert-call paywall
+pip install "openmoe-bft[ed25519]" # + Ed25519 receipt signing</code></pre>
+
+  <h3>Quickstart</h3>
+<pre><code>from openmoe_bft import BFTRouter, NoConsensusError
+
+experts = {1: lambda tok: f"EU AI Act expert handled {tok}"}
+
+def a(t): return 1
+def b(t): return 1
+def c(t): return 1
+def d(t): return 2   # outvoted Byzantine replica
+
+router = BFTRouter(experts, replicas=[a, b, c, d])  # n=4, f=1, quorum=3
+decision = router.route("token-42", session_id="req-1")
+assert decision.consensus and decision.dispatched</code></pre>
+</section>
+
+<section>
+  <h2>MCP server</h2>
+  <p>openmoe-bft ships a FastMCP server over the <strong>streamable-http</strong> transport (default endpoint <code>http://localhost:8000/mcp</code>). Any MCP-aware agent (Claude Desktop, Cursor, Smithery) can call the compliance tools directly.</p>
+<pre><code>pip install "openmoe-bft[mcp]"
+python -m server      # serves streamable-http on :8000/mcp</code></pre>
+  <table>
+    <tr><th>Tool</th><th>What it does</th></tr>
+    <tr><td><code>evaluate_eu_ai_act</code></td><td>Score conformity evidence against the EU AI Act checks; returns a severity-weighted ComplianceReport.</td></tr>
+    <tr><td><code>validate_agent_card</code></td><td>Validate an A2A Agent Card against the 14-safety-expert coverage contract and EU AI Act scoring.</td></tr>
+    <tr><td><code>red_team_scan</code></td><td>Run the canonical adversarial strategy sweep against a target; return a RedTeamReport with a 0..1 risk score.</td></tr>
+    <tr><td><code>bft_quorum</code></td><td>Compute Byzantine fault tolerance (f) and quorum size (2f+1) for an n-node cluster.</td></tr>
+  </table>
+</section>
+
+<section>
+  <h2>FAQ</h2>
+  <details><summary>What is openmoe-bft?</summary><p>A Python package that adds Byzantine-fault-tolerant consensus to Mixture-of-Experts (MoE) routing, bundled with a 9-module EU AI Act / A2A compliance toolkit. It is the consensus + safety-expert layer of the open-source OpenMoE-BFT governance stack by MEOK AI Labs.</p></details>
+  <details><summary>How does it make MoE routing Byzantine-fault-tolerant?</summary><p>Each routing decision is fanned out to N router replicas; their proposals are hashed and voted, and a token dispatches only when a 2f+1 quorum agrees, where f = floor((n-1)/3). A minority of compromised or buggy routers cannot misroute a token.</p></details>
+  <details><summary>Does it require GPUs or heavy ML dependencies?</summary><p>No. The core library is stdlib-only and runs anywhere Python 3.10+ runs. The MCP server adds the MCP SDK; x402 and Ed25519 are optional extras.</p></details>
+  <details><summary>Can I use it as an MCP server for EU AI Act compliance?</summary><p>Yes. Install the <code>[mcp]</code> extra and run the streamable-http server; it exposes <code>evaluate_eu_ai_act</code>, <code>validate_agent_card</code>, <code>red_team_scan</code>, and <code>bft_quorum</code> as MCP tools.</p></details>
+  <details><summary>What license is it under?</summary><p>Apache-2.0, © 2026 MEOK AI Labs.</p></details>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><strong>openmoe-bft</strong> — built by <a href="https://meok.ai">MEOK AI Labs</a> / CSOAI-ORG · <a href="https://github.com/CSOAI-ORG/OPENMOE">GitHub</a> · <a href="https://pypi.org/project/openmoe-bft/">PyPI</a> · Apache-2.0</p>
+    <p>MEOK keiretsu: <a href="https://csoai.org">csoai.org</a> · <a href="https://meok.ai">meok.ai</a> · <a href="https://openscore.ai">openscore.ai</a> · <a href="https://proofof.ai">proofof.ai</a> · <a href="https://councilof.ai">councilof.ai</a> · <a href="https://openmoe.ai">openmoe.ai</a></p>
+  </div>
+</footer>
+
+</body>
+</html>
