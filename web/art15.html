@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>BFT routing as EU AI Act Article 15 evidence — openmoe-bft</title>
+<link rel="canonical" href="https://openmoe.ai/art15.html" />
+<meta name="description" content="How Byzantine-fault-tolerant MoE routing with hash-chained receipts serves as EU AI Act Article 15 (robustness, cybersecurity) and Article 12 (record-keeping) engineering evidence. Runtime enforcement vs assessment-only, ahead of the 2 Aug 2026 high-risk deadline." />
+<link rel="icon" href="/favicon.ico" sizes="32x32">
+<meta name="theme-color" content="#0b0e14">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"BFT routing as EU AI Act Article 15 evidence","author":{"@type":"Organization","name":"MEOK AI Labs","url":"https://meok.ai"},"publisher":{"@type":"Organization","name":"CSOAI","url":"https://csoai.org"},"datePublished":"2026-06-10","about":["EU AI Act","Article 15","Byzantine fault tolerance","Mixture of Experts","AI governance"]}</script>
+<style>
+  :root { --bg:#0b0e14; --panel:#131822; --fg:#e6e9ef; --muted:#9aa4b2; --acc:#5b8cff; --acc2:#7dd3a8; --border:#222b3a; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; }
+  a { color:var(--acc); text-decoration:none; }
+  a:hover { text-decoration:underline; }
+  .wrap { max-width:920px; margin:0 auto; padding:0 20px; }
+  header { padding:64px 0 32px; border-bottom:1px solid var(--border); }
+  h1 { font-size:2.4rem; margin:0 0 8px; letter-spacing:-0.02em; }
+  .tag { color:var(--acc2); font-weight:600; }
+  .lead { font-size:1.2rem; color:var(--muted); max-width:680px; }
+  h2 { font-size:1.5rem; margin:48px 0 12px; letter-spacing:-0.01em; }
+  h3 { font-size:1.1rem; margin:24px 0 6px; }
+  section { border-bottom:1px solid var(--border); padding-bottom:24px; }
+  code, pre { font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; }
+  pre { background:var(--panel); border:1px solid var(--border); border-radius:10px; padding:16px; overflow-x:auto; font-size:0.9rem; }
+  code { background:var(--panel); padding:2px 6px; border-radius:5px; font-size:0.9em; }
+  pre code { background:none; padding:0; }
+  ul { padding-left:20px; }
+  table { width:100%; border-collapse:collapse; margin:12px 0; font-size:0.92rem; }
+  th, td { text-align:left; padding:8px 10px; border-bottom:1px solid var(--border); vertical-align:top; }
+  th { color:var(--muted); font-weight:600; }
+  .badges span { display:inline-block; background:var(--panel); border:1px solid var(--border); border-radius:999px; padding:3px 12px; margin:4px 6px 0 0; font-size:0.82rem; color:var(--muted); }
+  .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:14px; margin-top:12px; }
+  .card { background:var(--panel); border:1px solid var(--border); border-radius:10px; padding:14px 16px; }
+  .card h3 { margin-top:0; color:var(--fg); }
+  .card p { margin:6px 0 0; color:var(--muted); font-size:0.92rem; }
+  details { background:var(--panel); border:1px solid var(--border); border-radius:8px; padding:10px 14px; margin:8px 0; }
+  summary { cursor:pointer; font-weight:600; }
+  footer { padding:32px 0 64px; color:var(--muted); font-size:0.9rem; }
+  footer a { color:var(--fg); }
+  .cta { display:inline-block; background:var(--acc); color:#fff; padding:10px 18px; border-radius:8px; font-weight:600; margin-top:10px; }
+  .cta:hover { text-decoration:none; opacity:0.92; }
+</style>
+</head>
+<body>
+<header class="wrap"><h1>BFT routing as EU AI Act Article 15 evidence</h1>
+<p class="lead">Articles 12 &amp; 15 ask for engineering proof — logging, robustness, resilience to attacks. A 2f+1 Byzantine quorum with hash-chained receipts IS that proof.</p></header>
+<div class="wrap">
+<section><h2>What Article 15 actually requires</h2>
+<p>Regulation (EU) 2024/1689, Article 15: high-risk AI systems must achieve appropriate <strong>accuracy, robustness and cybersecurity</strong> — including resilience to "attempts to alter their use, behaviour or performance" (data/model poisoning, adversarial examples). Article 12 requires <strong>automatic event logging</strong> over the system lifetime. Most teams answer with documents. Auditors increasingly ask for mechanisms.</p></section>
+<section><h2>The mechanism openmoe-bft gives you</h2>
+<ul>
+<li><strong>Art 15 robustness:</strong> every MoE routing decision is fanned to N router replicas; a token dispatches only on a 2f+1 quorum — up to f compromised routers cannot misroute. Krum / trimmed-mean fusion makes logit poisoning ineffective.</li>
+<li><strong>Art 15 cybersecurity:</strong> the red-team module probes your own deployment and scores resilience 0..1 — continuous adversarial testing, not an annual pentest PDF.</li>
+<li><strong>Art 12 record-keeping:</strong> hash-chained, tamper-evident receipts (HMAC-SHA256 / Ed25519) for every decision — an append-only log an auditor verifies offline.</li>
+</ul></section>
+<section><h2>From mechanism to signed evidence</h2>
+<p>Run the 19 built-in conformity checks (Articles 9&ndash;15), then turn the results into a <strong>cryptographically signed attestation</strong> with a public verify URL via <a href="https://proofof.ai">proofof.ai</a> — the CSOAI mesh's independent attestation layer. For certification-grade review: the <strong>CSOAI Watchdog Certification assessment (£4,950)</strong>.</p>
+<pre><code>pip install openmoe-bft</code></pre></section>
+<section><h2>Why this beats a compliance questionnaire</h2>
+<p>Assessment-only tools tell you where you stand today. Runtime enforcement keeps you compliant on every request — and produces the evidence trail as a side effect. That is the difference between preparing for the <strong>2 August 2026</strong> high-risk obligations and merely describing them.</p></section>
+<footer style="padding:32px 0;color:var(--muted)">Apache-2.0 · By MEOK AI Labs / <a href="https://csoai.org">CSOAI</a> · <a href="/">openmoe.ai</a> · <a href="/x402.html">x402</a> · <a href="/#pricing">pricing</a></footer>
+</div>
+</body>
+</html>

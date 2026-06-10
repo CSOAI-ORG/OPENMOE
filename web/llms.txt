@@ -37,3 +37,17 @@ Streamable-http transport, default endpoint http://localhost:8000/mcp. Tools: ev
 - Full detail: https://openmoe.ai/llms-full.txt
 - License: Apache-2.0
 - Vendor: MEOK AI Labs / CSOAI-ORG (csoai.org, meok.ai, openscore.ai, proofof.ai, councilof.ai)
+
+## Pricing (GBP, ratified 2026-06-10)
+- Free £0 — entire core library, Apache-2.0, self-host (pip install openmoe-bft)
+- Starter £29/mo — hosted /mcp/openmoe endpoint, signed receipts
+- Pro £199/mo — unlimited quorum calls, validate_agent_card in CI, public verify URLs
+- Enterprise £1,499/mo — CSOAI governance: Watchdog certification hooks, private replicas, SLA
+- x402 pay-per-call on every tier, no account (see https://openmoe.ai/x402.html)
+- CSOAI Watchdog Certification assessment: £4,950 one-time
+
+## Part of the CSOAI / MEOK governance mesh
+- Authority & standards: https://csoai.org · Consumer companion: https://meok.ai · Signed compliance attestations: https://proofof.ai
+- Agent card: https://openmoe.ai/.well-known/agent.json (A2A 0.3.0; validated in CI by openmoe-bft itself)
+- EU AI Act note: BFT quorum routing + hash-chained receipts serve as Article 15 (accuracy, robustness, cybersecurity) and Article 12 (record-keeping) engineering evidence — see https://openmoe.ai/art15.html
+
