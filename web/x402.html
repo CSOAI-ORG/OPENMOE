@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>x402 interop — openmoe-bft pay-per-call BFT routing</title>
+<link rel="canonical" href="https://openmoe.ai/x402.html" />
+<meta name="description" content="Pay-per-call Byzantine-fault-tolerant MoE routing with x402 (HTTP 402): no account, machine-to-machine payment, hash-chained cryptographic receipts. openmoe-bft by MEOK AI Labs / CSOAI." />
+<link rel="icon" href="/favicon.ico" sizes="32x32">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#0b0e14">
+<style>
+  :root { --bg:#0b0e14; --panel:#131822; --fg:#e6e9ef; --muted:#9aa4b2; --acc:#5b8cff; --acc2:#7dd3a8; --border:#222b3a; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; }
+  a { color:var(--acc); text-decoration:none; }
+  a:hover { text-decoration:underline; }
+  .wrap { max-width:920px; margin:0 auto; padding:0 20px; }
+  header { padding:64px 0 32px; border-bottom:1px solid var(--border); }
+  h1 { font-size:2.4rem; margin:0 0 8px; letter-spacing:-0.02em; }
+  .tag { color:var(--acc2); font-weight:600; }
+  .lead { font-size:1.2rem; color:var(--muted); max-width:680px; }
+  h2 { font-size:1.5rem; margin:48px 0 12px; letter-spacing:-0.01em; }
+  h3 { font-size:1.1rem; margin:24px 0 6px; }
+  section { border-bottom:1px solid var(--border); padding-bottom:24px; }
+  code, pre { font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; }
+  pre { background:var(--panel); border:1px solid var(--border); border-radius:10px; padding:16px; overflow-x:auto; font-size:0.9rem; }
+  code { background:var(--panel); padding:2px 6px; border-radius:5px; font-size:0.9em; }
+  pre code { background:none; padding:0; }
+  ul { padding-left:20px; }
+  table { width:100%; border-collapse:collapse; margin:12px 0; font-size:0.92rem; }
+  th, td { text-align:left; padding:8px 10px; border-bottom:1px solid var(--border); vertical-align:top; }
+  th { color:var(--muted); font-weight:600; }
+  .badges span { display:inline-block; background:var(--panel); border:1px solid var(--border); border-radius:999px; padding:3px 12px; margin:4px 6px 0 0; font-size:0.82rem; color:var(--muted); }
+  .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:14px; margin-top:12px; }
+  .card { background:var(--panel); border:1px solid var(--border); border-radius:10px; padding:14px 16px; }
+  .card h3 { margin-top:0; color:var(--fg); }
+  .card p { margin:6px 0 0; color:var(--muted); font-size:0.92rem; }
+  details { background:var(--panel); border:1px solid var(--border); border-radius:8px; padding:10px 14px; margin:8px 0; }
+  summary { cursor:pointer; font-weight:600; }
+  footer { padding:32px 0 64px; color:var(--muted); font-size:0.9rem; }
+  footer a { color:var(--fg); }
+  .cta { display:inline-block; background:var(--acc); color:#fff; padding:10px 18px; border-radius:8px; font-weight:600; margin-top:10px; }
+  .cta:hover { text-decoration:none; opacity:0.92; }
+</style>
+</head>
+<body>
+<header class="wrap"><h1>x402 interop</h1>
+<p class="lead">Pay-per-call BFT routing, no account required. Agents pay per quorum decision with HTTP 402 — machine-to-machine, tamper-evident receipts.</p></header>
+<div class="wrap">
+<section><h2>Install</h2><pre><code>pip install "openmoe-bft[x402]"</code></pre></section>
+<section><h2>How it works</h2><ol>
+<li>Your agent calls an openmoe-bft endpoint (a hosted BFT route or <code>validate_agent_card</code>).</li>
+<li>Server replies <code>402</code> with an x402 payment envelope (amount, asset, pay-to address).</li>
+<li>The agent&rsquo;s wallet signs payment; the retry carries the <code>X-PAYMENT</code> header.</li>
+<li>The response includes a <strong>hash-chained cryptographic receipt</strong> (HMAC-SHA256 / Ed25519) — payment AND routing decision are both tamper-evident.</li>
+</ol></section>
+<section><h2>Why x402 + BFT belong together</h2><p>A quorum decision you paid for is only worth something if you can prove it happened. Every paid call returns a receipt chained into the hive ledger — auditable offline, EU AI Act Articles 9&ndash;15 checks included.</p></section>
+<section><h2>Free vs paid</h2><ul>
+<li><strong>Free / Apache-2.0:</strong> the entire core library, stdlib-only. Self-host everything.</li>
+<li><strong>Starter £29/mo &middot; Pro £199/mo &middot; Enterprise £1,499/mo:</strong> hosted endpoints + CSOAI governance — see <a href="/#pricing">pricing</a>.</li>
+<li><strong>x402 PAYG:</strong> per-call on any tier, no signup.</li>
+<li><strong>£4,950 one-time:</strong> CSOAI Watchdog Certification assessment.</li>
+</ul></section>
+<section><h2>Interop targets</h2><ul>
+<li><strong>A2A:</strong> agent card at <a href="/.well-known/agent.json">/.well-known/agent.json</a>; <code>validate_agent_card</code> is the fleet CI check.</li>
+<li><strong>MCP:</strong> <code>pip install "openmoe-bft[mcp]"</code> &rarr; streamable-HTTP server.</li>
+<li><strong>x402 facilitators:</strong> any facilitator speaking the open spec.</li>
+</ul></section>
+<footer style="padding:32px 0;color:var(--muted)">Part of the MEOK AI Labs / CSOAI fleet &middot; <a href="/">openmoe.ai</a></footer>
+</div>
+</body>
+</html>

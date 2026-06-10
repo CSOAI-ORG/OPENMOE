@@ -1,0 +1,21 @@
+{
+  "name": "openmoe-bft \u2014 BFT consensus for MoE routing",
+  "short_name": "openmoe",
+  "description": "Byzantine-fault-tolerant consensus for Mixture-of-Experts routing + EU AI Act / A2A compliance toolkit. By MEOK AI Labs / CSOAI.",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#0b0e14",
+  "theme_color": "#0b0e14",
+  "icons": [
+    {
+      "src": "/favicon-32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}

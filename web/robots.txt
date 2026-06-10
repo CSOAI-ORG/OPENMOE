@@ -1,4 +1,4 @@
-# robots.txt for openmoe.ai (confirm host once the parked domain is live)
+# robots.txt for openmoe.ai
 User-agent: *
 Allow: /
 

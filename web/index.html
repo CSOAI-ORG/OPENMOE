@@ -4,9 +4,14 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<!-- Confirm canonical/og:url host once openmoe.ai is live (currently parked). -->
 <title>openmoe-bft — Byzantine-Fault-Tolerant Consensus for MoE Routing + EU AI Act Compliance</title>
 <link rel="canonical" href="https://openmoe.ai/" />
+<link rel="icon" href="/favicon.ico" sizes="32x32">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#0b0e14">
 <meta name="description" content="openmoe-bft wraps every Mixture-of-Experts routing decision in a Byzantine-fault-tolerant (2f+1) quorum, and ships an EU-AI-Act / A2A compliance toolkit: BFT, robust aggregation, debate, EU AI Act checks, cryptographic receipts, memory, covenants, red-team, and A2A. Apache-2.0, stdlib-only core, MCP server included." />
 <meta name="keywords" content="byzantine fault tolerance, mixture of experts, MoE routing, BFT consensus, EU AI Act, AI governance, AI safety, A2A compliance, MCP server, robust aggregation, krum, red team" />
 <meta name="author" content="MEOK AI Labs" />
@@ -43,7 +48,13 @@
       "license": "https://www.apache.org/licenses/LICENSE-2.0",
       "softwareRequirements": "Python >= 3.10; core library is stdlib-only",
       "keywords": "byzantine fault tolerance, mixture of experts, MoE routing, consensus, EU AI Act, AI governance, AI safety, compliance, A2A, agent2agent, MCP server, red team, robust aggregation, krum, trimmed mean, cryptographic receipts",
-      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+      "offers": [
+        {"@type":"Offer","name":"Free","price":"0","priceCurrency":"GBP","description":"Apache-2.0 core library, self-hosted"},
+        {"@type":"Offer","name":"Starter","price":"29","priceCurrency":"GBP","description":"Hosted MCP endpoint, signed receipts"},
+        {"@type":"Offer","name":"Pro","price":"199","priceCurrency":"GBP","description":"Unlimited quorum calls, CI agent-card validation, verify URLs"},
+        {"@type":"Offer","name":"Enterprise","price":"1499","priceCurrency":"GBP","description":"CSOAI governance, private replicas, SLA"},
+        {"@type":"Offer","name":"CSOAI Watchdog Certification assessment","price":"4950","priceCurrency":"GBP","description":"One-time certification assessment of your MoE deployment"}
+      ],
       "author": { "@id": "https://meok.ai/#organization" },
       "publisher": { "@id": "https://meok.ai/#organization" },
       "featureList": [
@@ -123,7 +134,7 @@
       <span>Apache-2.0</span>
       <span>Python 3.10+</span>
       <span>stdlib-only core</span>
-      <span>183 tests</span>
+      <span>212 tests</span>
       <span>MCP server included</span>
     </div>
     <p><a class="cta" href="https://pypi.org/project/openmoe-bft/">pip install openmoe-bft</a></p>
@@ -159,6 +170,8 @@
 pip install "openmoe-bft[mcp]"     # + MCP transport for expert registration
 pip install "openmoe-bft[x402]"    # + x402 per-consensus / per-expert-call paywall
 pip install "openmoe-bft[ed25519]" # + Ed25519 receipt signing</code></pre>
+  <p style="color:var(--muted);font-size:.92rem">PyPI release rolling out — install direct from source today:<br>
+  <code>pip install "openmoe-bft @ git+https://github.com/CSOAI-ORG/openmoe"</code></p>
 
   <h3>Quickstart</h3>
 <pre><code>from openmoe_bft import BFTRouter, NoConsensusError
@@ -187,6 +200,19 @@ python -m server      # serves streamable-http on :8000/mcp</code></pre>
     <tr><td><code>red_team_scan</code></td><td>Run the canonical adversarial strategy sweep against a target; return a RedTeamReport with a 0..1 risk score.</td></tr>
     <tr><td><code>bft_quorum</code></td><td>Compute Byzantine fault tolerance (f) and quorum size (2f+1) for an n-node cluster.</td></tr>
   </table>
+</section>
+
+
+<section id="pricing">
+  <h2>Pricing</h2>
+  <p>The library is free forever (Apache-2.0). You pay for <strong>hosted endpoints</strong> and <strong>CSOAI governance</strong> — or pay per call with x402, no account needed.</p>
+  <div class="grid">
+    <div class="card"><h3>Free — £0</h3><p>The entire core library, stdlib-only. Self-host everything.<br><code>pip install openmoe-bft</code></p></div>
+    <div class="card"><h3>Starter — £29/mo</h3><p>Hosted <code>/mcp/openmoe</code> endpoint, signed receipts, fair-use quota.</p></div>
+    <div class="card"><h3>Pro — £199/mo</h3><p>Unlimited quorum calls, <code>validate_agent_card</code> in CI, public verify URLs.</p></div>
+    <div class="card"><h3>Enterprise — £1,499/mo</h3><p>CSOAI governance: Watchdog certification hooks, private router replicas, SLA, audit exports.</p></div>
+  </div>
+  <p><strong>x402 pay-per-call</strong> on every tier — agents pay per quorum decision, no signup (<a href="/x402.html">how it works</a>). Need certification? <strong>CSOAI Watchdog Certification assessment — £4,950 one-time.</strong></p>
 </section>
 
 <section>
