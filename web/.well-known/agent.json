@@ -1,0 +1,35 @@
+{
+  "protocolVersion": "0.3.0",
+  "name": "openmoe.ai — OpenMoE-BFT: Byzantine-fault-tolerant MoE routing + A2A compliance",
+  "description": "Open-source BFT consensus layer for Mixture-of-Experts routing: every routing decision is fanned out to N router replicas and dispatched only on a 2f+1 quorum, governed by the 14 OpenScore safety experts. Ships a 9-module EU-AI-Act / A2A compliance toolkit (19 conformity checks, Articles 9-15), hash-chained cryptographic receipts (HMAC-SHA256 / Ed25519), hierarchical L0-L3 memory, covenants & web-of-trust, and red-team orchestration. Apache-2.0, Python 3.10+, stdlib-only core, MCP server included.",
+  "url": "https://openmoe.ai",
+  "preferredTransport": "JSONRPC",
+  "provider": { "organization": "MEOK AI Labs (CSOAI LTD, UK Companies House 16939677)", "url": "https://meok.ai" },
+  "version": "1.0.0",
+  "documentationUrl": "https://openmoe.ai/llms.txt",
+  "capabilities": { "streaming": false, "pushNotifications": false, "stateTransitionHistory": false },
+  "defaultInputModes": ["application/json", "text/plain"],
+  "defaultOutputModes": ["application/json"],
+  "skills": [
+    { "id": "bft-route", "name": "BFT MoE routing decision", "description": "Fan a routing decision out to N router replicas; dispatch only when a 2f+1 quorum agrees (f = floor((n-1)/3)). BFTRouter, BFTLedger, quorum arithmetic.", "tags": ["bft","moe","routing","consensus"], "examples": ["Route this token through a 4-replica BFT quorum", "What is the quorum size for 7 router replicas?"] },
+    { "id": "robust-aggregation", "name": "Robust router-logit fusion", "description": "Coordinate-wise median, trimmed mean, Krum / Multi-Krum aggregation over numeric router logits — single compromised replica cannot skew the route.", "tags": ["krum","robust-aggregation","byzantine"] },
+    { "id": "debate-consensus", "name": "Debate consensus", "description": "Proposers refine positions across rounds; the BFT ledger decides. Multi-agent deliberation with a tamper-evident outcome.", "tags": ["debate","consensus","multi-agent"] },
+    { "id": "eu-ai-act-conformity", "name": "EU AI Act conformity checks", "description": "19 conformity checks across Articles 9-15 of Regulation (EU) 2024/1689, runnable against an MoE/agent deployment.", "tags": ["eu-ai-act","compliance","conformity"] },
+    { "id": "crypto-receipts", "name": "Cryptographic receipts", "description": "Hash-chained, tamper-evident receipts for every routing/consensus decision (HMAC-SHA256, optional Ed25519).", "tags": ["receipts","audit","ed25519","hash-chain"] },
+    { "id": "a2a-compliance", "name": "A2A agent-card validation", "description": "validate_agent_card — validate A2A Agent Cards against the EU AI Act and the 14 OpenScore safety experts. Used fleet-wide as the CI check for .well-known/agent.json.", "tags": ["a2a","agent-card","validation","openscore"], "examples": ["Validate this agent.json against the EU AI Act"] },
+    { "id": "red-team", "name": "Red-team orchestration", "description": "Pluggable attack strategies probe a target agent/router and score resilience 0..1.", "tags": ["red-team","security","resilience"] },
+    { "id": "hierarchical-memory", "name": "Hierarchical memory + dream()", "description": "L0-L3 memory pyramid with an overnight dream() consolidation pass.", "tags": ["memory","consolidation"] },
+    { "id": "covenants", "name": "Covenants & web-of-trust", "description": "Agents pre-commit to allowed actions; breaches degrade a trust score across the web-of-trust.", "tags": ["covenants","trust","governance"] }
+  ],
+  "securitySchemes": {
+    "x402": { "type": "apiKey", "in": "header", "name": "X-PAYMENT", "description": "x402 pay-per-call (pip install \"openmoe-bft[x402]\"). Core is free/Apache-2.0." }
+  },
+  "_meta": {
+    "registry": "io.github.CSOAI-ORG (official MCP Registry)",
+    "install": { "core": "pip install openmoe-bft", "mcp": "pip install \"openmoe-bft[mcp]\"", "x402": "pip install \"openmoe-bft[x402]\"", "source": "pip install \"openmoe-bft @ git+https://github.com/CSOAI-ORG/openmoe\"" },
+    "license": "Apache-2.0",
+    "pricing_gbp": { "free": 0, "starter": 29, "pro": 199, "enterprise": 1499, "watchdog_certification_assessment_one_time": 4950, "payg": "x402 per-call, all tiers" },
+    "sov3": { "king": "https://sovereign.meok.ai/mcp", "queen": "openmoe-queen", "hive": "openmoe", "identity": "73ef5bf2" },
+    "deployNote": "Served at https://openmoe.ai/.well-known/agent.json via GitHub Pages (web/.well-known/). Validate in CI with openmoe-bft validate_agent_card (dogfood: this card validated by its own tool)."
+  }
+}
