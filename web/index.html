@@ -123,6 +123,7 @@
   .cta { display:inline-block; background:var(--acc); color:#fff; padding:10px 18px; border-radius:8px; font-weight:600; margin-top:10px; }
   .cta:hover { text-decoration:none; opacity:0.92; }
 </style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is openmoe-bft?", "acceptedAnswer": {"@type": "Answer", "text": "A Python package that adds Byzantine-fault-tolerant consensus to Mixture-of-Experts (MoE) routing, bundled with a 9-module EU AI Act / A2A compliance toolkit. It is the consensus + safety-expert layer of the open-source OpenMoE-BFT governance stack by MEOK AI Labs."}}, {"@type": "Question", "name": "How does it make MoE routing Byzantine-fault-tolerant?", "acceptedAnswer": {"@type": "Answer", "text": "Each routing decision is fanned out to N router replicas; their proposals are hashed and voted, and a token dispatches only when a 2f+1 quorum agrees, where f = floor((n-1)/3). A minority of compromised or buggy routers cannot misroute a token."}}, {"@type": "Question", "name": "Does it require GPUs or heavy ML dependencies?", "acceptedAnswer": {"@type": "Answer", "text": "No. The core library is stdlib-only and runs anywhere Python 3.10+ runs. The MCP server adds the MCP SDK; x402 and Ed25519 are optional extras."}}, {"@type": "Question", "name": "Can I use it as an MCP server for EU AI Act compliance?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Install the [mcp] extra and run the streamable-http server; it exposes evaluate_eu_ai_act, validate_agent_card, red_team_scan, and bft_quorum as MCP tools."}}, {"@type": "Question", "name": "What license is it under?", "acceptedAnswer": {"@type": "Answer", "text": "Apache-2.0, © 2026 MEOK AI Labs."}}]}</script>
 </head>
 <body>
 
@@ -208,11 +209,11 @@ python -m server      # serves streamable-http on :8000/mcp</code></pre>
   <p>The library is free forever (Apache-2.0). You pay for <strong>hosted endpoints</strong> and <strong>CSOAI governance</strong> — or pay per call with x402, no account needed.</p>
   <div class="grid">
     <div class="card"><h3>Free — £0</h3><p>The entire core library, stdlib-only. Self-host everything.<br><code>pip install openmoe-bft</code></p></div>
-    <div class="card"><h3>Starter — £29/mo</h3><p>Hosted <code>/mcp/openmoe</code> endpoint, signed receipts, fair-use quota.</p></div>
-    <div class="card"><h3>Pro — £199/mo</h3><p>Unlimited quorum calls, <code>validate_agent_card</code> in CI, public verify URLs.</p></div>
-    <div class="card"><h3>Enterprise — £1,499/mo</h3><p>CSOAI governance: Watchdog certification hooks, private router replicas, SLA, audit exports.</p></div>
+    <div class="card"><h3>Starter — £29/mo</h3><p>Hosted <code>/mcp/openmoe</code> endpoint, signed receipts, fair-use quota.</p><p><a class="cta buy-btn" data-tier="starter" href="/x402.html">Subscribe £29/mo</a></p></div>
+    <div class="card"><h3>Pro — £199/mo</h3><p>Unlimited quorum calls, <code>validate_agent_card</code> in CI, public verify URLs.</p><p><a class="cta buy-btn" data-tier="pro" href="/x402.html">Subscribe £199/mo</a></p></div>
+    <div class="card"><h3>Enterprise — £1,499/mo</h3><p>CSOAI governance: Watchdog certification hooks, private router replicas, SLA, audit exports.</p><p><a class="cta buy-btn" data-tier="enterprise" href="/x402.html">Subscribe £1,499/mo</a></p></div>
   </div>
-  <p><strong>x402 pay-per-call</strong> on every tier — agents pay per quorum decision, no signup (<a href="/x402.html">how it works</a>). Need certification? <strong>CSOAI Watchdog Certification assessment — £4,950 one-time.</strong></p>
+  <p><strong>x402 pay-per-call</strong> on every tier — agents pay per quorum decision, no signup (<a href="/x402.html">how it works</a>). Need certification? <strong>CSOAI Watchdog Certification assessment — £4,950 one-time.</strong> <a class="buy-btn" data-tier="watchdog" href="/x402.html">Book assessment</a></p>
 </section>
 
 <section>
@@ -233,5 +234,11 @@ python -m server      # serves streamable-http on :8000/mcp</code></pre>
   </div>
 </footer>
 
+<script>
+fetch('/payment-links.json').then(r=>r.ok?r.json():{}).then(L=>{
+  document.querySelectorAll('.buy-btn').forEach(b=>{const u=L[b.dataset.tier];
+    if(u&&u.indexOf('https://buy.stripe.com')===0){b.href=u;}else{b.title='Checkout opening shortly — free tier: pip install openmoe-bft';}});
+}).catch(()=>{});
+</script>
 </body>
 </html>
