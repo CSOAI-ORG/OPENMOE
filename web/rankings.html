@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Rankings — the provable tool leaderboard | openmoe.ai</title>
+<link rel="canonical" href="https://openmoe.ai/rankings.html" />
+<meta name="description" content="The first verifiable usage leaderboard for AI tools: counts backed by Ed25519-signed, hash-chained receipts auditable offline. Arming with the hosted openmoe gateway." />
+<link rel="icon" href="/favicon.ico" sizes="32x32">
+<meta name="theme-color" content="#0b0e14">
+<style>
+  :root { --bg:#0b0e14; --panel:#131822; --fg:#e6e9ef; --muted:#9aa4b2; --acc:#5b8cff; --acc2:#7dd3a8; --border:#222b3a; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; }
+  a { color:var(--acc); text-decoration:none; }
+  a:hover { text-decoration:underline; }
+  .wrap { max-width:920px; margin:0 auto; padding:0 20px; }
+  header { padding:64px 0 32px; border-bottom:1px solid var(--border); }
+  h1 { font-size:2.4rem; margin:0 0 8px; letter-spacing:-0.02em; }
+  .tag { color:var(--acc2); font-weight:600; }
+  .lead { font-size:1.2rem; color:var(--muted); max-width:680px; }
+  h2 { font-size:1.5rem; margin:48px 0 12px; letter-spacing:-0.01em; }
+  h3 { font-size:1.1rem; margin:24px 0 6px; }
+  section { border-bottom:1px solid var(--border); padding-bottom:24px; }
+  code, pre { font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; }
+  pre { background:var(--panel); border:1px solid var(--border); border-radius:10px; padding:16px; overflow-x:auto; font-size:0.9rem; }
+  code { background:var(--panel); padding:2px 6px; border-radius:5px; font-size:0.9em; }
+  pre code { background:none; padding:0; }
+  ul { padding-left:20px; }
+  table { width:100%; border-collapse:collapse; margin:12px 0; font-size:0.92rem; }
+  th, td { text-align:left; padding:8px 10px; border-bottom:1px solid var(--border); vertical-align:top; }
+  th { color:var(--muted); font-weight:600; }
+  .badges span { display:inline-block; background:var(--panel); border:1px solid var(--border); border-radius:999px; padding:3px 12px; margin:4px 6px 0 0; font-size:0.82rem; color:var(--muted); }
+  .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:14px; margin-top:12px; }
+  .card { background:var(--panel); border:1px solid var(--border); border-radius:10px; padding:14px 16px; }
+  .card h3 { margin-top:0; color:var(--fg); }
+  .card p { margin:6px 0 0; color:var(--muted); font-size:0.92rem; }
+  details { background:var(--panel); border:1px solid var(--border); border-radius:8px; padding:10px 14px; margin:8px 0; }
+  summary { cursor:pointer; font-weight:600; }
+  footer { padding:32px 0 64px; color:var(--muted); font-size:0.9rem; }
+  footer a { color:var(--fg); }
+  .cta { display:inline-block; background:var(--acc); color:#fff; padding:10px 18px; border-radius:8px; font-weight:600; margin-top:10px; }
+  .cta:hover { text-decoration:none; opacity:0.92; }
+</style>
+</head>
+<body>
+<header class="wrap"><h1>Rankings — the provable leaderboard</h1>
+<p class="lead">Usage charts elsewhere are trust-me numbers. Ours will be <strong>cryptographically verifiable</strong>: every hosted call returns an Ed25519-signed, hash-chained receipt — "most-used tool" becomes a claim anyone can audit offline.</p></header>
+<div class="wrap">
+<section><h2>Status: arming</h2><p>The signed-call leaderboard goes live with the hosted gateway (<code>/mcp/openmoe</code>). Until then, no fabricated numbers — what is measurable today:</p>
+<ul>
+<li><strong>294 servers</strong> (latest versions) in the <a href="https://registry.modelcontextprotocol.io">official MCP Registry</a>, ns <code>io.github.CSOAI-ORG</code> — the <a href="/catalogue.html">catalogue</a></li>
+<li><strong>212/212 tests</strong> passing on openmoe-bft (clean-env pytest, 2026-06-10)</li>
+<li><strong>Agent card validated by its own tool</strong> in public CI (<a href="https://github.com/CSOAI-ORG/openmoe/actions">Actions</a>)</li>
+</ul></section>
+<section><h2>How it will work</h2>
+<ol><li>Every hosted tool call → signed receipt (cert_id, tool, timestamp, Ed25519).</li>
+<li>Receipts chain into the hive ledger; counts aggregate per tool.</li>
+<li>This page publishes counts <em>and</em> the chain head — verify with <code>openmoe-bft</code> against <code>/pubkey</code>. No trust required.</li></ol></section>
+<footer style="padding:32px 0;color:var(--muted)">By MEOK AI Labs / <a href="https://csoai.org">CSOAI</a> · <a href="/">openmoe.ai</a> · <a href="/catalogue.html">catalogue</a></footer></div>
+</body>
+</html>

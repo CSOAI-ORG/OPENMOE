@@ -1,0 +1,2359 @@
+{
+ "updated": "2026-06-11",
+ "source": "registry.modelcontextprotocol.io (io.github.CSOAI-ORG, latest versions, exhaustive pagination)",
+ "count": 294,
+ "servers": [
+  {
+   "name": "io.github.CSOAI-ORG/a2a-governance-bridge-mcp",
+   "slug": "a2a-governance-bridge-mcp",
+   "description": "A2A Governance Bridge MCP server. Tools: verify agent compliance, authorize a2a transaction, get tru",
+   "version": "1.1.5",
+   "pypi": "a2a-governance-bridge-mcp",
+   "repo": ""
+  },
+  {
+   "name": "io.github.CSOAI-ORG/accessibility-ai-mcp",
+   "slug": "accessibility-ai-mcp",
+   "description": "accessibility-ai-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "accessibility-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/accessibility-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/accounting-ai-mcp",
+   "slug": "accounting-ai-mcp",
+   "description": "accounting-ai-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.3",
+   "pypi": "accounting-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/accounting-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/ad-copy-ai-mcp",
+   "slug": "ad-copy-ai-mcp",
+   "description": "ad-copy-ai-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.3",
+   "pypi": "ad-copy-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/ad-copy-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/agent-audit-logger-mcp",
+   "slug": "agent-audit-logger-mcp",
+   "description": "Hash-chained HMAC-signed audit log MCP for A2A (agent-to-agent) calls. Every tool-call, agent-ha...",
+   "version": "1.1.6",
+   "pypi": "agent-audit-logger-mcp",
+   "repo": "https://github.com/CSOAI-ORG/agent-audit-logger-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/agent-commerce-payments-mcp",
+   "slug": "agent-commerce-payments-mcp",
+   "description": "agent-commerce-payments-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "agent-commerce-payments-mcp",
+   "repo": "https://github.com/CSOAI-ORG/agent-commerce-payments-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/agent-commerce-protocol-mcp",
+   "slug": "agent-commerce-protocol-mcp",
+   "description": "Agent Commerce Protocol MCP \u2014 bridges Stripe ACP + Google AP2 + Coinbase x402 for agent payments",
+   "version": "1.0.7",
+   "pypi": "agent-commerce-protocol-mcp",
+   "repo": "https://github.com/CSOAI-ORG/agent-commerce-protocol-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/agent-content-watermark-mcp",
+   "slug": "agent-content-watermark-mcp",
+   "description": "Agent Content Watermark MCP \u2014 dedicated EU AI Act Article 50(2) GenAI watermarking. Visible +",
+   "version": "1.1.5",
+   "pypi": "agent-content-watermark-mcp",
+   "repo": "https://github.com/CSOAI-ORG/agent-content-watermark-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/agent-cost-allocator-mcp",
+   "slug": "agent-cost-allocator-mcp",
+   "description": "Agent Cost Allocator MCP \u2014 multi-tenant LLM cost attribution for chargeback billing. Companion to",
+   "version": "1.0.3",
+   "pypi": "agent-cost-allocator-mcp",
+   "repo": "https://github.com/CSOAI-ORG/agent-cost-allocator-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/agent-data-residency-mcp",
+   "slug": "agent-data-residency-mcp",
+   "description": "Agent data residency + GDPR Chapter V transfer-basis runtime guard. Programmatically answer 'whe...",
+   "version": "1.0.6",
+   "pypi": "agent-data-residency-mcp",
+   "repo": "https://github.com/CSOAI-ORG/agent-data-residency-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/agent-delegation-mcp",
+   "slug": "agent-delegation-mcp",
+   "description": "agent-delegation-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "agent-delegation-mcp",
+   "repo": "https://github.com/CSOAI-ORG/agent-delegation-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/agent-handoff-certified-mcp",
+   "slug": "agent-handoff-certified-mcp",
+   "description": "Verifiable agent-to-agent task handoff with signed provenance chain. Initiating agent signs the ...",
+   "version": "1.0.8",
+   "pypi": "agent-handoff-certified-mcp",
+   "repo": "https://github.com/CSOAI-ORG/agent-handoff-certified-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/agent-identity-trust-mcp",
+   "slug": "agent-identity-trust-mcp",
+   "description": "agent-identity-trust-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "agent-identity-trust-mcp",
+   "repo": "https://github.com/CSOAI-ORG/agent-identity-trust-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/agent-incident-relay-mcp",
+   "slug": "agent-incident-relay-mcp",
+   "description": "Agent Incident Relay MCP \u2014 Article 73 5-clock broadcaster. One incident \u2192 simultaneous signed",
+   "version": "1.0.3",
+   "pypi": "agent-incident-relay-mcp",
+   "repo": "https://github.com/CSOAI-ORG/agent-incident-relay-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/agent-mcp-router-mcp",
+   "slug": "agent-mcp-router-mcp",
+   "description": "Agent MCP Router MCP \u2014 one router for the whole MEOK fleet. Holds 62 MEOK MCPs behind one",
+   "version": "1.1.3",
+   "pypi": "agent-mcp-router-mcp",
+   "repo": "https://github.com/CSOAI-ORG/agent-mcp-router-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/agent-negotiation-mcp",
+   "slug": "agent-negotiation-mcp",
+   "description": "agent-negotiation-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "agent-negotiation-mcp",
+   "repo": "https://github.com/CSOAI-ORG/agent-negotiation-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/agent-orchestrator-mcp",
+   "slug": "agent-orchestrator-mcp",
+   "description": "agent-orchestrator-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.3",
+   "pypi": "agent-orchestrator-mcp",
+   "repo": "https://github.com/CSOAI-ORG/agent-orchestrator-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/agent-policy-enforcement-mcp",
+   "slug": "agent-policy-enforcement-mcp",
+   "description": "Per-agent-pair IAM for A2A. Define policies ('orchestrator may call billing only when amount<100...",
+   "version": "1.0.8",
+   "pypi": "agent-policy-enforcement-mcp",
+   "repo": "https://github.com/CSOAI-ORG/agent-policy-enforcement-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/agent-prompt-injection-firewall-mcp",
+   "slug": "agent-prompt-injection-firewall-mcp",
+   "description": "The WAF for agents. Pattern-based + heuristic firewall scans prompts, RAG documents, tool argume...",
+   "version": "1.0.9",
+   "pypi": "agent-prompt-injection-firewall-mcp",
+   "repo": "https://github.com/CSOAI-ORG/agent-prompt-injection-firewall-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/agent-rate-limiter-mcp",
+   "slug": "agent-rate-limiter-mcp",
+   "description": "Fleet-wide shared rate limiter for A2A + multi-MCP deployments. Most MCP servers rate-limit inde...",
+   "version": "1.0.6",
+   "pypi": "agent-rate-limiter-mcp",
+   "repo": "https://github.com/CSOAI-ORG/agent-rate-limiter-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/agent-replay-debugger-mcp",
+   "slug": "agent-replay-debugger-mcp",
+   "description": "Agent Replay Debugger MCP \u2014 record every agent step + deterministic replay. Step-debugger for",
+   "version": "1.0.3",
+   "pypi": "agent-replay-debugger-mcp",
+   "repo": "https://github.com/CSOAI-ORG/agent-replay-debugger-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/agent-token-budget-mcp",
+   "slug": "agent-token-budget-mcp",
+   "description": "Agent Token Budget MCP \u2014 hard per-session token + spend cap with signed budget-exhausted",
+   "version": "1.1.3",
+   "pypi": "agent-token-budget-mcp",
+   "repo": "https://github.com/CSOAI-ORG/agent-token-budget-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/agent-x402-paywall-mcp",
+   "slug": "agent-x402-paywall-mcp",
+   "description": "Agent x402 Paywall MCP \u2014 Coinbase HTTP 402 protocol + on-chain settlement. Agents pay per-call",
+   "version": "1.0.5",
+   "pypi": "agent-x402-paywall-mcp",
+   "repo": "https://github.com/CSOAI-ORG/agent-x402-paywall-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/agriculture-robotics-mcp",
+   "slug": "agriculture-robotics-mcp",
+   "description": "agriculture-robotics-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "agriculture-robotics-mcp",
+   "repo": "https://github.com/CSOAI-ORG/agriculture-robotics-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/ai-bom-mcp",
+   "slug": "ai-bom-mcp",
+   "description": "AI Bill of Materials (AI-BOM) generator + auditor MCP \u2014 CycloneDX ML-BOM, SPDX 3.0 AI profile, E...",
+   "version": "1.2.17",
+   "pypi": "ai-bom-mcp",
+   "repo": "https://github.com/CSOAI-ORG/ai-bom-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/ai-gateway-mcp",
+   "slug": "ai-gateway-mcp",
+   "description": "ai-gateway-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "ai-gateway-mcp",
+   "repo": "https://github.com/CSOAI-ORG/ai-gateway-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/ai-incident-reporting-mcp",
+   "slug": "ai-incident-reporting-mcp",
+   "description": "AI Incident Reporting Compliance MCP. Unified classification + reporting-clock tracker across EU...",
+   "version": "1.1.5",
+   "pypi": "ai-incident-reporting-mcp",
+   "repo": "https://github.com/CSOAI-ORG/ai-incident-reporting-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/ai-ops-mcp",
+   "slug": "ai-ops-mcp",
+   "description": "ai-ops-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "ai-ops-mcp",
+   "repo": "https://github.com/CSOAI-ORG/ai-ops-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/ai-self-audit-mcp",
+   "slug": "ai-self-audit-mcp",
+   "description": "MCP server for ai self audit. Features self audit, audit conversation, get certificate. From MEOK AI",
+   "version": "1.0.8",
+   "pypi": "ai-self-audit-mcp",
+   "repo": ""
+  },
+  {
+   "name": "io.github.CSOAI-ORG/airspace-monitor-mcp",
+   "slug": "airspace-monitor-mcp",
+   "description": "airspace-monitor-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "airspace-monitor-mcp",
+   "repo": "https://github.com/CSOAI-ORG/airspace-monitor-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/aml-ai-mcp",
+   "slug": "aml-ai-mcp",
+   "description": "6AMLD + UK MLR 2017 + FinCEN BSA AML/CFT compliance for AI-enabled transaction monitoring, sanct...",
+   "version": "1.0.8",
+   "pypi": "aml-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/aml-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/api-docs-generator-ai-mcp",
+   "slug": "api-docs-generator-ai-mcp",
+   "description": "api-docs-generator-ai-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "api-docs-generator-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/api-docs-generator-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/api-tester-ai-mcp",
+   "slug": "api-tester-ai-mcp",
+   "description": "api-tester-ai-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "api-tester-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/api-tester-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/ascii-art-ai-mcp",
+   "slug": "ascii-art-ai-mcp",
+   "description": "ascii-art-ai-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "ascii-art-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/ascii-art-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/backup-ai-mcp",
+   "slug": "backup-ai-mcp",
+   "description": "backup-ai-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "backup-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/backup-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/basel-ai-overlay-mcp",
+   "slug": "basel-ai-overlay-mcp",
+   "description": "Basel III + SR 11-7 + ECB TRIM AI/ML model risk management for banks deploying AI in credit, cap...",
+   "version": "1.0.8",
+   "pypi": "basel-ai-overlay-mcp",
+   "repo": "https://github.com/CSOAI-ORG/basel-ai-overlay-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/bft-progress-council-mcp",
+   "slug": "bft-progress-council-mcp",
+   "description": "BFT Progress Council MCP \u2014 5-voter Byzantine council halts agentic loops when no real progress is",
+   "version": "1.1.5",
+   "pypi": "bft-progress-council-mcp",
+   "repo": "https://github.com/CSOAI-ORG/bft-progress-council-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/bias-detection-mcp",
+   "slug": "bias-detection-mcp",
+   "description": "AI bias detection and fairness assessment for AI agents. Instant bias risk scan, demographic ana...",
+   "version": "1.2.3",
+   "pypi": "bias-detection-mcp",
+   "repo": "https://github.com/CSOAI-ORG/bias-detection-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/blockchain-ai-mcp",
+   "slug": "blockchain-ai-mcp",
+   "description": "blockchain-ai-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "blockchain-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/blockchain-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/blockchain-verification-mcp",
+   "slug": "blockchain-verification-mcp",
+   "description": "blockchain-verification-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "blockchain-verification-mcp",
+   "repo": "https://github.com/CSOAI-ORG/blockchain-verification-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/budget-planner-ai-mcp",
+   "slug": "budget-planner-ai-mcp",
+   "description": "budget-planner-ai-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "budget-planner-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/budget-planner-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/calendar-ai-mcp",
+   "slug": "calendar-ai-mcp",
+   "description": "calendar-ai-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "calendar-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/calendar-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/canada-aida-ai-mcp",
+   "slug": "canada-aida-ai-mcp",
+   "description": "Canada Aida Ai automation via MCP. Includes classify ai system, impact assessment, compliance check.",
+   "version": "1.0.8",
+   "pypi": "canada-aida-ai-mcp",
+   "repo": ""
+  },
+  {
+   "name": "io.github.CSOAI-ORG/care-home-cqc-mcp",
+   "slug": "care-home-cqc-mcp",
+   "description": "UK Care Quality Commission (CQC) Single Assessment Framework compliance for care homes. AI-assisted",
+   "version": "1.0.9",
+   "pypi": "care-home-cqc-mcp",
+   "repo": "https://github.com/CSOAI-ORG/care-home-cqc-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/care-home-scheduling-mcp",
+   "slug": "care-home-scheduling-mcp",
+   "description": "care-home-scheduling-mcp for domiciliary opticians",
+   "version": "1.0.3",
+   "pypi": "care-home-scheduling-mcp",
+   "repo": "https://github.com/CSOAI-ORG/care-home-scheduling-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/care-membrane-mcp",
+   "slug": "care-membrane-mcp",
+   "description": "care-membrane-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.5",
+   "pypi": "care-membrane-mcp",
+   "repo": "https://github.com/CSOAI-ORG/care-membrane-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/changelog-ai-mcp",
+   "slug": "changelog-ai-mcp",
+   "description": "changelog-ai-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "changelog-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/changelog-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/chas-elite-prep-mcp",
+   "slug": "chas-elite-prep-mcp",
+   "description": "CHAS / SafeContractor / Constructionline pre-qualification preparation. Health & safety, environ...",
+   "version": "1.0.7",
+   "pypi": "chas-elite-prep-mcp",
+   "repo": "https://github.com/CSOAI-ORG/chas-elite-prep-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/churn-predictor-ai-mcp",
+   "slug": "churn-predictor-ai-mcp",
+   "description": "churn-predictor-ai-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "churn-predictor-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/churn-predictor-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/ci-cd-generator-ai-mcp",
+   "slug": "ci-cd-generator-ai-mcp",
+   "description": "ci-cd-generator-ai-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "ci-cd-generator-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/ci-cd-generator-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/cisa-kev-mcp",
+   "slug": "cisa-kev-mcp",
+   "description": "CISA Known Exploited Vulnerabilities feed + remediation deadlines for US federal + critical infr...",
+   "version": "1.0.6",
+   "pypi": "cisa-kev-mcp",
+   "repo": "https://github.com/CSOAI-ORG/cisa-kev-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/citation-finder-ai-mcp",
+   "slug": "citation-finder-ai-mcp",
+   "description": "citation-finder-ai-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "citation-finder-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/citation-finder-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/cli-builder-ai-mcp",
+   "slug": "cli-builder-ai-mcp",
+   "description": "cli-builder-ai-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "cli-builder-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/cli-builder-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/clinical-trials-ai-mcp",
+   "slug": "clinical-trials-ai-mcp",
+   "description": "clinical-trials-ai-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "clinical-trials-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/clinical-trials-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/clipboard-ai-mcp",
+   "slug": "clipboard-ai-mcp",
+   "description": "clipboard-ai-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "clipboard-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/clipboard-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/cobol-bridge-mcp",
+   "slug": "cobol-bridge-mcp",
+   "description": "AI-assisted COBOL \u2192 modern stack bridge. Parse COBOL programs, map to Python/Java/Go, generate t...",
+   "version": "1.1.7",
+   "pypi": "cobol-bridge-mcp",
+   "repo": "https://github.com/CSOAI-ORG/cobol-bridge-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/code-executor-mcp",
+   "slug": "code-executor-mcp",
+   "description": "code-executor-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "code-executor-mcp",
+   "repo": "https://github.com/CSOAI-ORG/code-executor-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/code-reviewer-ai-mcp",
+   "slug": "code-reviewer-ai-mcp",
+   "description": "code-reviewer-ai-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "code-reviewer-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/code-reviewer-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/color-ai-mcp",
+   "slug": "color-ai-mcp",
+   "description": "color-ai-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "color-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/color-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/commit-message-ai-mcp",
+   "slug": "commit-message-ai-mcp",
+   "description": "commit-message-ai-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "commit-message-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/commit-message-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/competitor-monitor-ai-mcp",
+   "slug": "competitor-monitor-ai-mcp",
+   "description": "competitor-monitor-ai-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "competitor-monitor-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/competitor-monitor-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/compression-ai-mcp",
+   "slug": "compression-ai-mcp",
+   "description": "compression-ai-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "compression-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/compression-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/concrete-pump-cpa-mcp",
+   "slug": "concrete-pump-cpa-mcp",
+   "description": "CPA Concrete Pumping Group standards, pump operator certification, BS EN 12001 ground bearing ca...",
+   "version": "1.0.7",
+   "pypi": "concrete-pump-cpa-mcp",
+   "repo": "https://github.com/CSOAI-ORG/concrete-pump-cpa-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/config-validator-ai-mcp",
+   "slug": "config-validator-ai-mcp",
+   "description": "config-validator-ai-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "config-validator-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/config-validator-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/consciousness-engine-mcp",
+   "slug": "consciousness-engine-mcp",
+   "description": "consciousness-engine-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.5",
+   "pypi": "consciousness-engine-mcp",
+   "repo": "https://github.com/CSOAI-ORG/consciousness-engine-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/construction-iso-19650-mcp",
+   "slug": "construction-iso-19650-mcp",
+   "description": "ISO 19650 / UK BIM Level 2 compliance for construction projects. EIR, BEP, MIDP, TIDP, and CDE s...",
+   "version": "1.0.7",
+   "pypi": "construction-iso-19650-mcp",
+   "repo": "https://github.com/CSOAI-ORG/construction-iso-19650-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/content-calendar-ai-mcp",
+   "slug": "content-calendar-ai-mcp",
+   "description": "content-calendar-ai-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "content-calendar-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/content-calendar-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/content-registry-mcp",
+   "slug": "content-registry-mcp",
+   "description": "content-registry-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "content-registry-mcp",
+   "repo": "https://github.com/CSOAI-ORG/content-registry-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/contract-review-ai-mcp",
+   "slug": "contract-review-ai-mcp",
+   "description": "contract-review-ai-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "contract-review-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/contract-review-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/coppa-ferpa-mcp",
+   "slug": "coppa-ferpa-mcp",
+   "description": "Children's privacy compliance: COPPA (US), FERPA (US edu), EU AI Act children's provisions, UK A...",
+   "version": "1.0.6",
+   "pypi": "coppa-ferpa-mcp",
+   "repo": "https://github.com/CSOAI-ORG/coppa-ferpa-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/cqc-compliance-mcp",
+   "slug": "cqc-compliance-mcp",
+   "description": "cqc-compliance-mcp for domiciliary opticians",
+   "version": "1.0.3",
+   "pypi": "cqc-compliance-mcp",
+   "repo": "https://github.com/CSOAI-ORG/cqc-compliance-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/cra-compliance-mcp",
+   "slug": "cra-compliance-mcp",
+   "description": "EU Cyber Resilience Act (Regulation 2024/2847) compliance for AI agents. Product classification...",
+   "version": "1.3.7",
+   "pypi": "cra-compliance-mcp",
+   "repo": "https://github.com/CSOAI-ORG/cra-compliance-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/crane-hire-cpcs-mcp",
+   "slug": "crane-hire-cpcs-mcp",
+   "description": "CPCS / CISRS / NPORS card verification, BS 7121 lift plans, mobile crane / tower crane operator ...",
+   "version": "1.0.7",
+   "pypi": "crane-hire-cpcs-mcp",
+   "repo": "https://github.com/CSOAI-ORG/crane-hire-cpcs-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/creativity-engine-mcp",
+   "slug": "creativity-engine-mcp",
+   "description": "creativity-engine-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "creativity-engine-mcp",
+   "repo": "https://github.com/CSOAI-ORG/creativity-engine-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/crm-ai-mcp",
+   "slug": "crm-ai-mcp",
+   "description": "crm-ai-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "crm-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/crm-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/cron-ai-mcp",
+   "slug": "cron-ai-mcp",
+   "description": "cron-ai-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "cron-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/cron-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/crypto-tracker-ai-mcp",
+   "slug": "crypto-tracker-ai-mcp",
+   "description": "crypto-tracker-ai-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "crypto-tracker-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/crypto-tracker-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/csoai-governance-crosswalk-mcp",
+   "slug": "csoai-governance-crosswalk-mcp",
+   "description": "csoai-governance-crosswalk-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.6",
+   "pypi": "csoai-governance-crosswalk-mcp",
+   "repo": "https://github.com/CSOAI-ORG/csoai-governance-crosswalk-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/csrd-compliance-mcp",
+   "slug": "csrd-compliance-mcp",
+   "description": "csrd-compliance-mcp MCP server by MEOK AI Labs",
+   "version": "1.2.4",
+   "pypi": "csrd-compliance-mcp",
+   "repo": "https://github.com/CSOAI-ORG/csrd-compliance-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/csv-analytics-mcp",
+   "slug": "csv-analytics-mcp",
+   "description": "csv-analytics-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "csv-analytics-mcp",
+   "repo": "https://github.com/CSOAI-ORG/csv-analytics-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/csv-tools-ai-mcp",
+   "slug": "csv-tools-ai-mcp",
+   "description": "csv-tools-ai-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "csv-tools-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/csv-tools-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/currency-converter-ai-mcp",
+   "slug": "currency-converter-ai-mcp",
+   "description": "currency-converter-ai-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "currency-converter-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/currency-converter-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/customer-support-ai-mcp",
+   "slug": "customer-support-ai-mcp",
+   "description": "customer-support-ai-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "customer-support-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/customer-support-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/cybersecurity-ai-mcp",
+   "slug": "cybersecurity-ai-mcp",
+   "description": "cybersecurity-ai-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "cybersecurity-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/cybersecurity-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/data-science-ai-mcp",
+   "slug": "data-science-ai-mcp",
+   "description": "data-science-ai-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "data-science-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/data-science-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/database-universal-mcp",
+   "slug": "database-universal-mcp",
+   "description": "database-universal-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "database-universal-mcp",
+   "repo": "https://github.com/CSOAI-ORG/database-universal-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/dataprivacy-ai-mcp",
+   "slug": "dataprivacy-ai-mcp",
+   "description": "Dataprivacy Ai automation via MCP. Includes classify personal data, assess lawful basis, generate dp",
+   "version": "1.0.8",
+   "pypi": "dataprivacy-ai-mcp",
+   "repo": ""
+  },
+  {
+   "name": "io.github.CSOAI-ORG/date-calculator-ai-mcp",
+   "slug": "date-calculator-ai-mcp",
+   "description": "date-calculator-ai-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "date-calculator-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/date-calculator-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/deepfake-detector-mcp",
+   "slug": "deepfake-detector-mcp",
+   "description": "AI-powered deepfake detector MCP server for agents. Supports detect deepfake, analyze audio authenti",
+   "version": "1.0.8",
+   "pypi": "deepfake-detector-mcp",
+   "repo": ""
+  },
+  {
+   "name": "io.github.CSOAI-ORG/dependency-updater-ai-mcp",
+   "slug": "dependency-updater-ai-mcp",
+   "description": "dependency-updater-ai-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "dependency-updater-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/dependency-updater-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/devops-ai-mcp",
+   "slug": "devops-ai-mcp",
+   "description": "devops-ai-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "devops-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/devops-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/diff-ai-mcp",
+   "slug": "diff-ai-mcp",
+   "description": "diff-ai-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "diff-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/diff-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/dispense-record-mcp",
+   "slug": "dispense-record-mcp",
+   "description": "GOC-compliant optical dispense record validation. Captures prescription, lens choice, fitting",
+   "version": "1.0.6",
+   "pypi": "dispense-record-mcp",
+   "repo": "https://github.com/CSOAI-ORG/dispense-record-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/docker-helper-ai-mcp",
+   "slug": "docker-helper-ai-mcp",
+   "description": "docker-helper-ai-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "docker-helper-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/docker-helper-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/dockerfile-generator-ai-mcp",
+   "slug": "dockerfile-generator-ai-mcp",
+   "description": "dockerfile-generator-ai-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "dockerfile-generator-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/dockerfile-generator-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/document-comparison-ai-mcp",
+   "slug": "document-comparison-ai-mcp",
+   "description": "document-comparison-ai-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "document-comparison-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/document-comparison-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/domiciliary-care-mcp",
+   "slug": "domiciliary-care-mcp",
+   "description": "UK domiciliary care provider compliance \u2014 DBS checks, CQC registration, Working Time Regulations",
+   "version": "1.0.6",
+   "pypi": "domiciliary-care-mcp",
+   "repo": "https://github.com/CSOAI-ORG/domiciliary-care-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/dora-compliance-mcp",
+   "slug": "dora-compliance-mcp",
+   "description": "DORA (EU Digital Operational Resilience Act) compliance for AI agents. 5-pillar audit, incident ...",
+   "version": "1.4.8",
+   "pypi": "dora-compliance-mcp",
+   "repo": "https://github.com/CSOAI-ORG/dora-compliance-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/dora-nis2-crosswalk-mcp",
+   "slug": "dora-nis2-crosswalk-mcp",
+   "description": "DORA \u00d7 NIS2 Crosswalk MCP \u2014 map Regulation (EU) 2022/2554 obligations to Directive (EU) 2022/255...",
+   "version": "1.1.3",
+   "pypi": "dora-nis2-crosswalk-mcp",
+   "repo": "https://github.com/CSOAI-ORG/dora-nis2-crosswalk-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/drone-airspace-governance-mcp",
+   "slug": "drone-airspace-governance-mcp",
+   "description": "Drone Airspace Governance tools for AI agents. Capabilities: classify operation, bvlos risk assessme",
+   "version": "1.0.8",
+   "pypi": "drone-airspace-governance-mcp",
+   "repo": ""
+  },
+  {
+   "name": "io.github.CSOAI-ORG/ecommerce-ai-mcp",
+   "slug": "ecommerce-ai-mcp",
+   "description": "ecommerce-ai-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "ecommerce-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/ecommerce-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/education-ai-mcp",
+   "slug": "education-ai-mcp",
+   "description": "education-ai-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "education-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/education-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/email-automation-mcp",
+   "slug": "email-automation-mcp",
+   "description": "email-automation-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "email-automation-mcp",
+   "repo": "https://github.com/CSOAI-ORG/email-automation-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/email-validator-ai-mcp",
+   "slug": "email-validator-ai-mcp",
+   "description": "email-validator-ai-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "email-validator-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/email-validator-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/emoji-ai-mcp",
+   "slug": "emoji-ai-mcp",
+   "description": "emoji-ai-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "emoji-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/emoji-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/encoder-ai-mcp",
+   "slug": "encoder-ai-mcp",
+   "description": "encoder-ai-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "encoder-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/encoder-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/env-manager-ai-mcp",
+   "slug": "env-manager-ai-mcp",
+   "description": "env-manager-ai-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "env-manager-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/env-manager-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/eu-ai-act-compliance-mcp",
+   "slug": "eu-ai-act-compliance-mcp",
+   "description": "Eu Ai Act Compliance MCP Server by MEOK AI Labs",
+   "version": "1.8.7",
+   "pypi": "eu-ai-act-compliance-mcp",
+   "repo": "https://github.com/CSOAI-ORG/eu-ai-act-compliance-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/eudi-wallet-mcp",
+   "slug": "eudi-wallet-mcp",
+   "description": "EUDI Wallet MCP \u2014 EU Digital Identity Wallet under eIDAS 2.0 for AI agent authentication via",
+   "version": "1.0.1",
+   "pypi": "eudi-wallet-mcp",
+   "repo": "https://github.com/CSOAI-ORG/eudi-wallet-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/event-planning-ai-mcp",
+   "slug": "event-planning-ai-mcp",
+   "description": "event-planning-ai-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "event-planning-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/event-planning-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/expense-tracker-ai-mcp",
+   "slug": "expense-tracker-ai-mcp",
+   "description": "expense-tracker-ai-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "expense-tracker-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/expense-tracker-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/explainability-report-mcp",
+   "slug": "explainability-report-mcp",
+   "description": "AI explainability and transparency reports for AI agents. Instant transparency scan, model cards, de",
+   "version": "1.0.8",
+   "pypi": "explainability-report-mcp",
+   "repo": ""
+  },
+  {
+   "name": "io.github.CSOAI-ORG/faker-ai-mcp",
+   "slug": "faker-ai-mcp",
+   "description": "faker-ai-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "faker-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/faker-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/fda-samd-mcp",
+   "slug": "fda-samd-mcp",
+   "description": "FDA AI/ML Software as a Medical Device Action Plan + 510(k) + PMA + De Novo pathways for US MedT...",
+   "version": "1.0.8",
+   "pypi": "fda-samd-mcp",
+   "repo": "https://github.com/CSOAI-ORG/fda-samd-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/feedback-analyzer-ai-mcp",
+   "slug": "feedback-analyzer-ai-mcp",
+   "description": "feedback-analyzer-ai-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "feedback-analyzer-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/feedback-analyzer-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/file-organizer-ai-mcp",
+   "slug": "file-organizer-ai-mcp",
+   "description": "file-organizer-ai-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "file-organizer-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/file-organizer-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/firmware-attestation-mcp",
+   "slug": "firmware-attestation-mcp",
+   "description": "Firmware Attestation MCP \u2014 hardware trust layer for sovereign AI. Scan firmware, check",
+   "version": "1.0.0",
+   "pypi": "firmware-attestation-mcp",
+   "repo": "https://github.com/CSOAI-ORG/firmware-attestation-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/fishkeeper-ai-mcp",
+   "slug": "fishkeeper-ai-mcp",
+   "description": "fishkeeper-ai-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "fishkeeper-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/fishkeeper-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/fitness-ai-mcp",
+   "slug": "fitness-ai-mcp",
+   "description": "fitness-ai-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "fitness-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/fitness-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/flashcard-ai-mcp",
+   "slug": "flashcard-ai-mcp",
+   "description": "flashcard-ai-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "flashcard-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/flashcard-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/flight-logger-mcp",
+   "slug": "flight-logger-mcp",
+   "description": "flight-logger-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "flight-logger-mcp",
+   "repo": "https://github.com/CSOAI-ORG/flight-logger-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/focus-timer-ai-mcp",
+   "slug": "focus-timer-ai-mcp",
+   "description": "focus-timer-ai-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "focus-timer-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/focus-timer-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/fsa-food-safety-mcp",
+   "slug": "fsa-food-safety-mcp",
+   "description": "UK Food Standards Agency + EU Reg 178/2002 + HACCP + allergen labelling compliance for food producer",
+   "version": "1.0.4",
+   "pypi": "fsa-food-safety-mcp",
+   "repo": ""
+  },
+  {
+   "name": "io.github.CSOAI-ORG/gardening-ai-mcp",
+   "slug": "gardening-ai-mcp",
+   "description": "gardening-ai-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "gardening-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/gardening-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/gdpr-compliance-ai-mcp",
+   "slug": "gdpr-compliance-ai-mcp",
+   "description": "Gdpr Compliance Ai MCP Server by MEOK AI Labs",
+   "version": "1.1.8",
+   "pypi": "gdpr-compliance-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/gdpr-compliance-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/geolocation-ai-mcp",
+   "slug": "geolocation-ai-mcp",
+   "description": "geolocation-ai-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "geolocation-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/geolocation-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/git-helper-ai-mcp",
+   "slug": "git-helper-ai-mcp",
+   "description": "git-helper-ai-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "git-helper-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/git-helper-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/gods-eye-geospatial-mcp",
+   "slug": "gods-eye-geospatial-mcp",
+   "description": "gods-eye-geospatial-mcp MCP server by MEOK AI Labs",
+   "version": "1.2.3",
+   "pypi": "gods-eye-geospatial-mcp",
+   "repo": "https://github.com/CSOAI-ORG/gods-eye-geospatial-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/grammar-fix-ai-mcp",
+   "slug": "grammar-fix-ai-mcp",
+   "description": "grammar-fix-ai-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "grammar-fix-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/grammar-fix-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/habit-tracker-ai-mcp",
+   "slug": "habit-tracker-ai-mcp",
+   "description": "habit-tracker-ai-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "habit-tracker-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/habit-tracker-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/hash-utils-ai-mcp",
+   "slug": "hash-utils-ai-mcp",
+   "description": "hash-utils-ai-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "hash-utils-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/hash-utils-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/haulage-uk-compliance-mcp",
+   "slug": "haulage-uk-compliance-mcp",
+   "description": "UK Operator Licence, tachograph, drivers' hours, DVSA roadside checks for UK haulage operators a...",
+   "version": "1.0.7",
+   "pypi": "haulage-uk-compliance-mcp",
+   "repo": "https://github.com/CSOAI-ORG/haulage-uk-compliance-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/health-check-ai-mcp",
+   "slug": "health-check-ai-mcp",
+   "description": "health-check-ai-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "health-check-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/health-check-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/healthcare-ai-governance-mcp",
+   "slug": "healthcare-ai-governance-mcp",
+   "description": "Healthcare Ai Governance automation via MCP. Includes classify samd, check cds exemption, hipaa ai c",
+   "version": "1.0.8",
+   "pypi": "healthcare-ai-governance-mcp",
+   "repo": ""
+  },
+  {
+   "name": "io.github.CSOAI-ORG/healthcare-fhir-mcp",
+   "slug": "healthcare-fhir-mcp",
+   "description": "healthcare-fhir-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "healthcare-fhir-mcp",
+   "repo": "https://github.com/CSOAI-ORG/healthcare-fhir-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/hipaa-compliance-mcp",
+   "slug": "hipaa-compliance-mcp",
+   "description": "hipaa-compliance-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.6",
+   "pypi": "hipaa-compliance-mcp",
+   "repo": "https://github.com/CSOAI-ORG/hipaa-compliance-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/hr-management-ai-mcp",
+   "slug": "hr-management-ai-mcp",
+   "description": "hr-management-ai-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "hr-management-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/hr-management-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/html-parser-ai-mcp",
+   "slug": "html-parser-ai-mcp",
+   "description": "html-parser-ai-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "html-parser-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/html-parser-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/hydration-reminder-ai-mcp",
+   "slug": "hydration-reminder-ai-mcp",
+   "description": "hydration-reminder-ai-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "hydration-reminder-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/hydration-reminder-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/icon-generator-ai-mcp",
+   "slug": "icon-generator-ai-mcp",
+   "description": "icon-generator-ai-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "icon-generator-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/icon-generator-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/image-metadata-ai-mcp",
+   "slug": "image-metadata-ai-mcp",
+   "description": "image-metadata-ai-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "image-metadata-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/image-metadata-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/insurance-verification-mcp",
+   "slug": "insurance-verification-mcp",
+   "description": "insurance-verification-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "insurance-verification-mcp",
+   "repo": "https://github.com/CSOAI-ORG/insurance-verification-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/inventory-management-ai-mcp",
+   "slug": "inventory-management-ai-mcp",
+   "description": "inventory-management-ai-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "inventory-management-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/inventory-management-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/invoice-generator-ai-mcp",
+   "slug": "invoice-generator-ai-mcp",
+   "description": "invoice-generator-ai-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "invoice-generator-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/invoice-generator-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/ip-network-ai-mcp",
+   "slug": "ip-network-ai-mcp",
+   "description": "ip-network-ai-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "ip-network-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/ip-network-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/iso-27001-ai-mcp",
+   "slug": "iso-27001-ai-mcp",
+   "description": "AI-powered iso 27001 ai MCP server for agents. Supports audit isms, risk assessment, gap analysis. B",
+   "version": "1.0.8",
+   "pypi": "iso-27001-ai-mcp",
+   "repo": ""
+  },
+  {
+   "name": "io.github.CSOAI-ORG/iso-42001-ai-mcp",
+   "slug": "iso-42001-ai-mcp",
+   "description": "Iso 42001 Ai MCP Server by MEOK AI Labs",
+   "version": "1.1.7",
+   "pypi": "iso-42001-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/iso-42001-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/iso-42005-impact-mcp",
+   "slug": "iso-42005-impact-mcp",
+   "description": "ISO/IEC 42005:2025 AI Impact Assessment MCP \u2014 first international standard for AI impact",
+   "version": "1.0.4",
+   "pypi": "iso-42005-impact-mcp",
+   "repo": "https://github.com/CSOAI-ORG/iso-42005-impact-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/job-description-ai-mcp",
+   "slug": "job-description-ai-mcp",
+   "description": "job-description-ai-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "job-description-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/job-description-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/json-ai-mcp",
+   "slug": "json-ai-mcp",
+   "description": "json-ai-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "json-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/json-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/jwt-ai-mcp",
+   "slug": "jwt-ai-mcp",
+   "description": "jwt-ai-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "jwt-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/jwt-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/keyword-extractor-ai-mcp",
+   "slug": "keyword-extractor-ai-mcp",
+   "description": "keyword-extractor-ai-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "keyword-extractor-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/keyword-extractor-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/landlaw-ai-mcp",
+   "slug": "landlaw-ai-mcp",
+   "description": "landlaw-ai-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "landlaw-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/landlaw-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/lead-scoring-ai-mcp",
+   "slug": "lead-scoring-ai-mcp",
+   "description": "lead-scoring-ai-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "lead-scoring-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/lead-scoring-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/legal-document-ai-mcp",
+   "slug": "legal-document-ai-mcp",
+   "description": "legal-document-ai-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "legal-document-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/legal-document-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/license-checker-ai-mcp",
+   "slug": "license-checker-ai-mcp",
+   "description": "license-checker-ai-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "license-checker-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/license-checker-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/linkedin-outreach-mcp",
+   "slug": "linkedin-outreach-mcp",
+   "description": "linkedin-outreach-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "linkedin-outreach-mcp",
+   "repo": "https://github.com/CSOAI-ORG/linkedin-outreach-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/llm-compliance-comparison-mcp",
+   "slug": "llm-compliance-comparison-mcp",
+   "description": "Llm Compliance Comparison tools for AI agents. Capabilities: compare providers, recommend for use ca",
+   "version": "1.0.8",
+   "pypi": "llm-compliance-comparison-mcp",
+   "repo": ""
+  },
+  {
+   "name": "io.github.CSOAI-ORG/logistics-ai-mcp",
+   "slug": "logistics-ai-mcp",
+   "description": "logistics-ai-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "logistics-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/logistics-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/lorem-ipsum-ai-mcp",
+   "slug": "lorem-ipsum-ai-mcp",
+   "description": "lorem-ipsum-ai-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "lorem-ipsum-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/lorem-ipsum-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/markdown-ai-mcp",
+   "slug": "markdown-ai-mcp",
+   "description": "markdown-ai-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "markdown-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/markdown-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/marketing-analytics-ai-mcp",
+   "slug": "marketing-analytics-ai-mcp",
+   "description": "marketing-analytics-ai-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "marketing-analytics-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/marketing-analytics-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/math-solver-ai-mcp",
+   "slug": "math-solver-ai-mcp",
+   "description": "math-solver-ai-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "math-solver-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/math-solver-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/mdr-medical-device-mcp",
+   "slug": "mdr-medical-device-mcp",
+   "description": "EU MDR (Reg 2017/745) and IVDR (Reg 2017/746) compliance for medical device + IVD manufacturers...",
+   "version": "1.0.6",
+   "pypi": "mdr-medical-device-mcp",
+   "repo": "https://github.com/CSOAI-ORG/mdr-medical-device-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/meal-planner-ai-mcp",
+   "slug": "meal-planner-ai-mcp",
+   "description": "meal-planner-ai-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "meal-planner-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/meal-planner-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/meditation-guide-ai-mcp",
+   "slug": "meditation-guide-ai-mcp",
+   "description": "meditation-guide-ai-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "meditation-guide-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/meditation-guide-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/meeting-summarizer-ai-mcp",
+   "slug": "meeting-summarizer-ai-mcp",
+   "description": "meeting-summarizer-ai-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "meeting-summarizer-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/meeting-summarizer-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/memory-search-mcp",
+   "slug": "memory-search-mcp",
+   "description": "memory-search-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "memory-search-mcp",
+   "repo": "https://github.com/CSOAI-ORG/memory-search-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/meok-ai-reflection-mcp",
+   "slug": "meok-ai-reflection-mcp",
+   "description": "MEOK AI Labs - ai-reflection MCP server extracted from SOV3",
+   "version": "1.0.6",
+   "pypi": "meok-ai-reflection-mcp",
+   "repo": "https://github.com/CSOAI-ORG/ai-reflection-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/meok-aquaponics-monitor-mcp",
+   "slug": "meok-aquaponics-monitor-mcp",
+   "description": "Unified sensor + actuator schema MCP for aquaculture / aquaponic / koi systems. Wraps Atlas",
+   "version": "1.0.3",
+   "pypi": "meok-aquaponics-monitor-mcp",
+   "repo": "https://github.com/CSOAI-ORG/meok-aquaponics-monitor-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/meok-asc-rspca-crosswalk-mcp",
+   "slug": "meok-asc-rspca-crosswalk-mcp",
+   "description": "Flagship aquaculture crosswalk \u2014 one evidence pack satisfies ASC + RSPCA Assured + GlobalG.A.P. IFA",
+   "version": "1.0.3",
+   "pypi": "meok-asc-rspca-crosswalk-mcp",
+   "repo": "https://github.com/CSOAI-ORG/meok-asc-rspca-crosswalk-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/meok-attestation-verify",
+   "slug": "meok-attestation-verify",
+   "description": "Tiny zero-dependency verifier for MEOK AI Labs compliance attestations (DORA, NIS2, CRA, EU AI Act, ",
+   "version": "1.0.3",
+   "pypi": "meok-attestation-verify",
+   "repo": "https://github.com/CSOAI-ORG/meok-attestation-verify"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/meok-bft-governance-mcp",
+   "slug": "meok-bft-governance-mcp",
+   "description": "MEOK AI Labs - bft-governance MCP server extracted from SOV3",
+   "version": "1.0.6",
+   "pypi": "meok-bft-governance-mcp",
+   "repo": "https://github.com/CSOAI-ORG/bft-governance-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/meok-bs7121-mcp",
+   "slug": "meok-bs7121-mcp",
+   "description": "BS 7121 lift-plan compliance for UK crane + hiab operators. Parts 1/3/4/5 clause lookup, Appointed",
+   "version": "1.0.3",
+   "pypi": "meok-bs7121-mcp",
+   "repo": "https://github.com/CSOAI-ORG/meok-bs7121-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/meok-cra-annex-iv-classifier-mcp",
+   "slug": "meok-cra-annex-iv-classifier-mcp",
+   "description": "EU Cyber Resilience Act product classifier MCP. Classifies PDEs into CRA hierarchy (default / Class",
+   "version": "1.1.6",
+   "pypi": "meok-cra-annex-iv-classifier-mcp",
+   "repo": "https://github.com/CSOAI-ORG/meok-cra-annex-iv-classifier-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/meok-dora-tlpt-planner-mcp",
+   "slug": "meok-dora-tlpt-planner-mcp",
+   "description": "meok-dora-tlpt-planner-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.3",
+   "pypi": "meok-dora-tlpt-planner-mcp",
+   "repo": "https://github.com/CSOAI-ORG/meok-dora-tlpt-planner-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/meok-dpia-edpb-template-mcp",
+   "slug": "meok-dpia-edpb-template-mcp",
+   "description": "DPIA generator for the EDPB harmonised template (adopted 14 Apr 2026) with EU AI Act Article 26(9)",
+   "version": "1.0.5",
+   "pypi": "meok-dpia-edpb-template-mcp",
+   "repo": "https://github.com/CSOAI-ORG/meok-dpia-edpb-template-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/meok-enterprise-compliance-checker",
+   "slug": "meok-enterprise-compliance-checker",
+   "description": "MEOK Enterprise Compliance Checker \u2014 EU AI Act, DORA, GDPR automated gap analysis. \u00a35K-15K audits",
+   "version": "1.0.5",
+   "pypi": "meok-enterprise-compliance-checker",
+   "repo": "https://github.com/CSOAI-ORG/meok-enterprise-compliance-checker"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/meok-enterprise-compliance-suite",
+   "slug": "meok-enterprise-compliance-suite",
+   "description": "MEOK Enterprise Compliance Suite \u2014 End-to-end EU AI Act, GDPR, NIS2, DORA, ISO, SOC2, HIPAA, PCI",
+   "version": "1.0.3",
+   "pypi": "meok-enterprise-compliance-suite",
+   "repo": "https://github.com/CSOAI-ORG/meok-enterprise-compliance-suite"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/meok-eu-ai-act-art-13-ifu-mcp",
+   "slug": "meok-eu-ai-act-art-13-ifu-mcp",
+   "description": "MEOK EU AI Act Article 13 Instructions for Use generator \u2014 provider-side IFU with 7 mandatory Art",
+   "version": "1.0.4",
+   "pypi": "meok-eu-ai-act-art-13-ifu-mcp",
+   "repo": "https://github.com/CSOAI-ORG/meok-eu-ai-act-art-13-ifu-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/meok-eu-ai-act-art-26-fria-mcp",
+   "slug": "meok-eu-ai-act-art-26-fria-mcp",
+   "description": "MEOK EU AI Act Article 26(9) Fundamental Rights Impact Assessment generator. Auto-generates FRIA",
+   "version": "1.0.4",
+   "pypi": "meok-eu-ai-act-art-26-fria-mcp",
+   "repo": "https://github.com/CSOAI-ORG/meok-eu-ai-act-art-26-fria-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/meok-eu-aigc-icon-mcp",
+   "slug": "meok-eu-aigc-icon-mcp",
+   "description": "MEOK EU AIGC Icon MCP \u2014 EU AI Act Article 50 + Code of Practice 2nd draft AI-generated-content icon",
+   "version": "1.0.1",
+   "pypi": "meok-eu-aigc-icon-mcp",
+   "repo": "https://github.com/CSOAI-ORG/meok-eu-aigc-icon-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/meok-eu-mobility-package-mcp",
+   "slug": "meok-eu-mobility-package-mcp",
+   "description": "EU Mobility Package compliance \u2014 EU 561/2006 drivers' hours, 4-week return-to-base, Posted Workers",
+   "version": "1.0.0",
+   "pypi": "meok-eu-mobility-package-mcp",
+   "repo": "https://github.com/CSOAI-ORG/meok-eu-mobility-package-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/meok-eu-platform-worker-mcp",
+   "slug": "meok-eu-platform-worker-mcp",
+   "description": "EU Platform Workers Directive (2024/2831) compliance \u2014 employment-status presumption",
+   "version": "1.0.0",
+   "pypi": "meok-eu-platform-worker-mcp",
+   "repo": "https://github.com/CSOAI-ORG/meok-eu-platform-worker-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/meok-ev-recall-transport-mcp",
+   "slug": "meok-ev-recall-transport-mcp",
+   "description": "EV-recall transport compliance \u2014 ADR Class 9 (UN3480/3481/3536/3556/3557/3558), DGSA workflow",
+   "version": "1.0.2",
+   "pypi": "meok-ev-recall-transport-mcp",
+   "repo": "https://github.com/CSOAI-ORG/meok-ev-recall-transport-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/meok-fria-generator-mcp",
+   "slug": "meok-fria-generator-mcp",
+   "description": "meok-fria-generator-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.3",
+   "pypi": "meok-fria-generator-mcp",
+   "repo": "https://github.com/CSOAI-ORG/meok-fria-generator-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/meok-governance-engine-mcp",
+   "slug": "meok-governance-engine-mcp",
+   "description": "AI-powered meok governance engine MCP server for agents. Supports full governance report, which fram",
+   "version": "1.0.13",
+   "pypi": "meok-governance-engine-mcp",
+   "repo": ""
+  },
+  {
+   "name": "io.github.CSOAI-ORG/meok-governance-smithery",
+   "slug": "meok-governance-smithery",
+   "description": "MEOK Governance Engine - 62 AI governance tools. EU AI Act + NIST + ISO 42001 + crosswalks. Most",
+   "version": "1.0.4",
+   "pypi": "meok-governance-smithery",
+   "repo": "https://github.com/CSOAI-ORG/meok-governance-smithery"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/meok-laia-aquatic-mcp",
+   "slug": "meok-laia-aquatic-mcp",
+   "description": "England Animal Welfare (Licensing of Activities Involving Animals) Regulations 2018 \u2014 LAIA \u2014 for",
+   "version": "1.0.3",
+   "pypi": "meok-laia-aquatic-mcp",
+   "repo": "https://github.com/CSOAI-ORG/meok-laia-aquatic-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/meok-mcp-injection-scan-mcp",
+   "slug": "meok-mcp-injection-scan-mcp",
+   "description": "MCP injection / prompt-poisoning / SSRF scanner. 30+ canonical rules covering the April 2026",
+   "version": "1.0.12",
+   "pypi": "meok-mcp-injection-scan-mcp",
+   "repo": "https://github.com/CSOAI-ORG/meok-mcp-injection-scan-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/meok-mcp-test-mcp",
+   "slug": "meok-mcp-test-mcp",
+   "description": "MEOK MCP Test MCP \u2014 golden-file + schema-drift + tool-failure tests for any MCP server. Drop-in",
+   "version": "1.0.3",
+   "pypi": "meok-mcp-test-mcp",
+   "repo": "https://github.com/CSOAI-ORG/meok-mcp-test-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/meok-neural-health-monitor-mcp",
+   "slug": "meok-neural-health-monitor-mcp",
+   "description": "MEOK AI Labs - neural-health-monitor MCP server extracted from SOV3",
+   "version": "1.0.4",
+   "pypi": "meok-neural-health-monitor-mcp",
+   "repo": "https://github.com/CSOAI-ORG/neural-health-monitor-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/meok-nis2-de-register-mcp",
+   "slug": "meok-nis2-de-register-mcp",
+   "description": "Germany NIS2 BSI registration MCP. Generates BSI-portal-ready (Mein Unternehmenskonto) registration",
+   "version": "1.0.10",
+   "pypi": "meok-nis2-de-register-mcp",
+   "repo": "https://github.com/CSOAI-ORG/meok-nis2-de-register-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/meok-omnibus-tracker-mcp",
+   "slug": "meok-omnibus-tracker-mcp",
+   "description": "EU Digital Omnibus AI Act tracker - Track delay status by article. First-mover advantage for SEO + b",
+   "version": "1.1.5",
+   "pypi": "meok-omnibus-tracker-mcp",
+   "repo": "https://github.com/CSOAI-ORG/meok-omnibus-tracker-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/meok-quantum-scoring-mcp",
+   "slug": "meok-quantum-scoring-mcp",
+   "description": "MEOK AI Labs - quantum-scoring MCP server extracted from SOV3",
+   "version": "1.0.5",
+   "pypi": "meok-quantum-scoring-mcp",
+   "repo": "https://github.com/CSOAI-ORG/quantum-scoring-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/meok-rspca-aquaculture-mcp",
+   "slug": "meok-rspca-aquaculture-mcp",
+   "description": "MCP server wrapping RSPCA Assured farmed trout (2025.07) and salmon (2024.05) welfare standards",
+   "version": "1.0.3",
+   "pypi": "meok-rspca-aquaculture-mcp",
+   "repo": "https://github.com/CSOAI-ORG/meok-rspca-aquaculture-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/meok-stripe-acp-checkout-mcp",
+   "slug": "meok-stripe-acp-checkout-mcp",
+   "description": "MEOK Stripe ACP Checkout MCP \u2014 ChatGPT shopping bridge. Issues + verifies + signs Stripe Agentic",
+   "version": "1.0.4",
+   "pypi": "meok-stripe-acp-checkout-mcp",
+   "repo": "https://github.com/CSOAI-ORG/meok-stripe-acp-checkout-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/meok-tacho-audit-mcp",
+   "slug": "meok-tacho-audit-mcp",
+   "description": "UK haulage tachograph audit + drivers' hours + DVSA OCRS Red prevention. Smart Tachograph 2 (July",
+   "version": "1.0.3",
+   "pypi": "meok-tacho-audit-mcp",
+   "repo": "https://github.com/CSOAI-ORG/meok-tacho-audit-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/meok-uk-fhi-mcp",
+   "slug": "meok-uk-fhi-mcp",
+   "description": "MCP server wrapping the UK aquaculture regulatory stack \u2014 CEFAS Fish Health Inspectorate AW1 APB",
+   "version": "1.0.3",
+   "pypi": "meok-uk-fhi-mcp",
+   "repo": "https://github.com/CSOAI-ORG/meok-uk-fhi-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/meok-vehicle-handover-mcp",
+   "slug": "meok-vehicle-handover-mcp",
+   "description": "Vehicle handover compliance \u2014 NAMA Vehicle Grading, BVRLA Fair Wear & Tear, photographic POD",
+   "version": "1.0.2",
+   "pypi": "meok-vehicle-handover-mcp",
+   "repo": "https://github.com/CSOAI-ORG/meok-vehicle-handover-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/meok-w3c-tdm-rights-mcp",
+   "slug": "meok-w3c-tdm-rights-mcp",
+   "description": "MEOK W3C TDM Rights MCP \u2014 EU CDSM Directive Article 4(3) Text + Data Mining opt-out. Issues + scans",
+   "version": "1.0.4",
+   "pypi": "meok-w3c-tdm-rights-mcp",
+   "repo": "https://github.com/CSOAI-ORG/meok-w3c-tdm-rights-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/meok-watermark-attest-mcp",
+   "slug": "meok-watermark-attest-mcp",
+   "description": "AI content watermarking and C2PA attestation MCP server by MEOK AI Labs",
+   "version": "1.3.10",
+   "pypi": "meok-watermark-attest-mcp",
+   "repo": "https://github.com/CSOAI-ORG/meok-watermark-attest-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/mica-crypto-mcp",
+   "slug": "mica-crypto-mcp",
+   "description": "Markets in Crypto-Assets (MiCA) Regulation (EU) 2023/1114 compliance for EU crypto-asset issuers...",
+   "version": "1.0.7",
+   "pypi": "mica-crypto-mcp",
+   "repo": "https://github.com/CSOAI-ORG/mica-crypto-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/mifid-ii-ai-mcp",
+   "slug": "mifid-ii-ai-mcp",
+   "description": "MiFID II Article 17 algorithmic trading + RTS 6 testing/risk controls + best execution AI compli...",
+   "version": "1.0.7",
+   "pypi": "mifid-ii-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/mifid-ii-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/mitre-atlas-mcp",
+   "slug": "mitre-atlas-mcp",
+   "description": "MITRE ATLAS \u2014 Adversarial Threat Landscape for AI Systems. Tactics + techniques for attacking AI...",
+   "version": "1.0.7",
+   "pypi": "mitre-atlas-mcp",
+   "repo": "https://github.com/CSOAI-ORG/mitre-atlas-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/mock-server-ai-mcp",
+   "slug": "mock-server-ai-mcp",
+   "description": "mock-server-ai-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "mock-server-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/mock-server-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/mortgage-calculator-ai-mcp",
+   "slug": "mortgage-calculator-ai-mcp",
+   "description": "mortgage-calculator-ai-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "mortgage-calculator-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/mortgage-calculator-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/muckaway-ai-mcp",
+   "slug": "muckaway-ai-mcp",
+   "description": "muckaway-ai-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "muckaway-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/muckaway-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/music-production-ai-mcp",
+   "slug": "music-production-ai-mcp",
+   "description": "music-production-ai-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "music-production-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/music-production-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/nis2-compliance-mcp",
+   "slug": "nis2-compliance-mcp",
+   "description": "NIS2 Directive (EU 2022/2555) compliance for AI agents. 10 Article 21 risk-management measures a...",
+   "version": "1.3.5",
+   "pypi": "nis2-compliance-mcp",
+   "repo": "https://github.com/CSOAI-ORG/nis2-compliance-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/nist-rmf-ai-mcp",
+   "slug": "nist-rmf-ai-mcp",
+   "description": "Nist Rmf Ai MCP Server by MEOK AI Labs",
+   "version": "1.0.13",
+   "pypi": "nist-rmf-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/nist-rmf-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/note-taking-ai-mcp",
+   "slug": "note-taking-ai-mcp",
+   "description": "note-taking-ai-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "note-taking-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/note-taking-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/notification-ai-mcp",
+   "slug": "notification-ai-mcp",
+   "description": "notification-ai-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "notification-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/notification-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/nrswa-ai-mcp",
+   "slug": "nrswa-ai-mcp",
+   "description": "UK street works compliance. Section 50 licences, S58 deferral, S74 overrun penalties, NRSWA accr...",
+   "version": "1.0.6",
+   "pypi": "nrswa-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/nrswa-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/nutrition-tracker-ai-mcp",
+   "slug": "nutrition-tracker-ai-mcp",
+   "description": "nutrition-tracker-ai-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "nutrition-tracker-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/nutrition-tracker-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/optometry-ai-safety-mcp",
+   "slug": "optometry-ai-safety-mcp",
+   "description": "optometry-ai-safety-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "optometry-ai-safety-mcp",
+   "repo": "https://github.com/CSOAI-ORG/optometry-ai-safety-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/optometry-patient-mcp",
+   "slug": "optometry-patient-mcp",
+   "description": "FHIR-based patient records for domiciliary opticians",
+   "version": "1.0.3",
+   "pypi": "optometry-patient-mcp",
+   "repo": "https://github.com/CSOAI-ORG/optometry-patient-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/otp-ai-mcp",
+   "slug": "otp-ai-mcp",
+   "description": "otp-ai-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "otp-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/otp-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/owasp-agentic-mcp",
+   "slug": "owasp-agentic-mcp",
+   "description": "owasp-agentic-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "owasp-agentic-mcp",
+   "repo": "https://github.com/CSOAI-ORG/owasp-agentic-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/password-ai-mcp",
+   "slug": "password-ai-mcp",
+   "description": "password-ai-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "password-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/password-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/patient-safety-ai-mcp",
+   "slug": "patient-safety-ai-mcp",
+   "description": "AI-powered patient safety ai MCP server for agents. Supports check drug interactions, assess patient",
+   "version": "1.0.8",
+   "pypi": "patient-safety-ai-mcp",
+   "repo": ""
+  },
+  {
+   "name": "io.github.CSOAI-ORG/pci-dss-mcp",
+   "slug": "pci-dss-mcp",
+   "description": "pci-dss-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "pci-dss-mcp",
+   "repo": "https://github.com/CSOAI-ORG/pci-dss-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/pdf-document-mcp",
+   "slug": "pdf-document-mcp",
+   "description": "pdf-document-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "pdf-document-mcp",
+   "repo": "https://github.com/CSOAI-ORG/pdf-document-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/pdf-merge-ai-mcp",
+   "slug": "pdf-merge-ai-mcp",
+   "description": "pdf-merge-ai-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "pdf-merge-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/pdf-merge-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/pdf-tools-ai-mcp",
+   "slug": "pdf-tools-ai-mcp",
+   "description": "pdf-tools-ai-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "pdf-tools-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/pdf-tools-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/performance-ai-mcp",
+   "slug": "performance-ai-mcp",
+   "description": "performance-ai-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "performance-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/performance-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/personal-finance-ai-mcp",
+   "slug": "personal-finance-ai-mcp",
+   "description": "personal-finance-ai-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "personal-finance-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/personal-finance-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/pet-care-ai-mcp",
+   "slug": "pet-care-ai-mcp",
+   "description": "pet-care-ai-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.5",
+   "pypi": "pet-care-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/pet-care-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/photography-ai-mcp",
+   "slug": "photography-ai-mcp",
+   "description": "photography-ai-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "photography-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/photography-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/plagiarism-checker-ai-mcp",
+   "slug": "plagiarism-checker-ai-mcp",
+   "description": "plagiarism-checker-ai-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "plagiarism-checker-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/plagiarism-checker-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/planthire-ai-mcp",
+   "slug": "planthire-ai-mcp",
+   "description": "planthire-ai-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "planthire-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/planthire-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/pomodoro-ai-mcp",
+   "slug": "pomodoro-ai-mcp",
+   "description": "pomodoro-ai-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "pomodoro-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/pomodoro-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/price-tracker-ai-mcp",
+   "slug": "price-tracker-ai-mcp",
+   "description": "price-tracker-ai-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "price-tracker-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/price-tracker-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/project-management-ai-mcp",
+   "slug": "project-management-ai-mcp",
+   "description": "project-management-ai-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "project-management-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/project-management-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/proofof-ai-mcp",
+   "slug": "proofof-ai-mcp",
+   "description": "proofof-ai-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.5",
+   "pypi": "proofof-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/proofof-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/qidi-printer-mcp",
+   "slug": "qidi-printer-mcp",
+   "description": "qidi-printer-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "qidi-printer-mcp",
+   "repo": "https://github.com/CSOAI-ORG/qidi-printer-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/qr-code-ai-mcp",
+   "slug": "qr-code-ai-mcp",
+   "description": "qr-code-ai-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "qr-code-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/qr-code-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/quiz-generator-ai-mcp",
+   "slug": "quiz-generator-ai-mcp",
+   "description": "quiz-generator-ai-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "quiz-generator-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/quiz-generator-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/rag-knowledge-graph-mcp",
+   "slug": "rag-knowledge-graph-mcp",
+   "description": "rag-knowledge-graph-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "rag-knowledge-graph-mcp",
+   "repo": "https://github.com/CSOAI-ORG/rag-knowledge-graph-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/rag-knowledge-mcp",
+   "slug": "rag-knowledge-mcp",
+   "description": "rag-knowledge-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "rag-knowledge-mcp",
+   "repo": "https://github.com/CSOAI-ORG/rag-knowledge-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/readme-generator-ai-mcp",
+   "slug": "readme-generator-ai-mcp",
+   "description": "readme-generator-ai-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "readme-generator-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/readme-generator-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/real-estate-listing-mcp",
+   "slug": "real-estate-listing-mcp",
+   "description": "real-estate-listing-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "real-estate-listing-mcp",
+   "repo": "https://github.com/CSOAI-ORG/real-estate-listing-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/recipe-finder-ai-mcp",
+   "slug": "recipe-finder-ai-mcp",
+   "description": "recipe-finder-ai-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "recipe-finder-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/recipe-finder-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/recruitment-ai-mcp",
+   "slug": "recruitment-ai-mcp",
+   "description": "recruitment-ai-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "recruitment-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/recruitment-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/regex-ai-mcp",
+   "slug": "regex-ai-mcp",
+   "description": "regex-ai-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "regex-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/regex-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/regulatory-webhook-mcp",
+   "slug": "regulatory-webhook-mcp",
+   "description": "MCP server for regulatory webhook. Features subscribe, get recent changes, check for updates. From M",
+   "version": "1.0.8",
+   "pypi": "regulatory-webhook-mcp",
+   "repo": ""
+  },
+  {
+   "name": "io.github.CSOAI-ORG/restaurant-ai-mcp",
+   "slug": "restaurant-ai-mcp",
+   "description": "restaurant-ai-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "restaurant-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/restaurant-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/resume-parser-ai-mcp",
+   "slug": "resume-parser-ai-mcp",
+   "description": "resume-parser-ai-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "resume-parser-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/resume-parser-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/risk-assessment-ai-mcp",
+   "slug": "risk-assessment-ai-mcp",
+   "description": "MCP server for risk assessment ai. Features assess risk, create risk register, add risk. From MEOK A",
+   "version": "1.0.8",
+   "pypi": "risk-assessment-ai-mcp",
+   "repo": ""
+  },
+  {
+   "name": "io.github.CSOAI-ORG/robotics-control-mcp",
+   "slug": "robotics-control-mcp",
+   "description": "robotics-control-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "robotics-control-mcp",
+   "repo": "https://github.com/CSOAI-ORG/robotics-control-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/sbom-cyclonedx-mcp",
+   "slug": "sbom-cyclonedx-mcp",
+   "description": "Software Bill of Materials generation + validation in CycloneDX 1.6 and SPDX 2.3 formats. Requir...",
+   "version": "1.0.4",
+   "pypi": "sbom-cyclonedx-mcp",
+   "repo": "https://github.com/CSOAI-ORG/sbom-cyclonedx-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/scam-detector-mcp",
+   "slug": "scam-detector-mcp",
+   "description": "Scam and fraud detection for AI agents. Instant scam check, phishing URL analysis, social engineerin",
+   "version": "1.0.8",
+   "pypi": "scam-detector-mcp",
+   "repo": ""
+  },
+  {
+   "name": "io.github.CSOAI-ORG/schema-validator-ai-mcp",
+   "slug": "schema-validator-ai-mcp",
+   "description": "schema-validator-ai-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "schema-validator-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/schema-validator-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/security-scanner-ai-mcp",
+   "slug": "security-scanner-ai-mcp",
+   "description": "Security Scanner Ai automation via MCP. Includes scan dependencies, check headers, scan secrets. By ",
+   "version": "1.0.8",
+   "pypi": "security-scanner-ai-mcp",
+   "repo": ""
+  },
+  {
+   "name": "io.github.CSOAI-ORG/self-healing-infrastructure-mcp",
+   "slug": "self-healing-infrastructure-mcp",
+   "description": "self-healing-infrastructure-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "self-healing-infrastructure-mcp",
+   "repo": "https://github.com/CSOAI-ORG/self-healing-infrastructure-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/sentiment-analysis-ai-mcp",
+   "slug": "sentiment-analysis-ai-mcp",
+   "description": "sentiment-analysis-ai-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "sentiment-analysis-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/sentiment-analysis-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/seo-checker-ai-mcp",
+   "slug": "seo-checker-ai-mcp",
+   "description": "seo-checker-ai-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "seo-checker-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/seo-checker-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/skip-hire-ai-mcp",
+   "slug": "skip-hire-ai-mcp",
+   "description": "UK Waste Carrier Registration, EA waste codes, hazardous waste consignment notes for skip hire a...",
+   "version": "1.0.5",
+   "pypi": "skip-hire-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/skip-hire-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/slack-enterprise-mcp",
+   "slug": "slack-enterprise-mcp",
+   "description": "slack-enterprise-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "slack-enterprise-mcp",
+   "repo": "https://github.com/CSOAI-ORG/slack-enterprise-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/sleep-tracker-ai-mcp",
+   "slug": "sleep-tracker-ai-mcp",
+   "description": "sleep-tracker-ai-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "sleep-tracker-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/sleep-tracker-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/slugify-ai-mcp",
+   "slug": "slugify-ai-mcp",
+   "description": "slugify-ai-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "slugify-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/slugify-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/soc2-compliance-ai-mcp",
+   "slug": "soc2-compliance-ai-mcp",
+   "description": "Soc2 Compliance Ai MCP Server by MEOK AI Labs",
+   "version": "1.0.12",
+   "pypi": "soc2-compliance-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/soc2-compliance-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/social-media-ai-mcp",
+   "slug": "social-media-ai-mcp",
+   "description": "social-media-ai-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "social-media-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/social-media-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/sql-builder-ai-mcp",
+   "slug": "sql-builder-ai-mcp",
+   "description": "sql-builder-ai-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.6",
+   "pypi": "sql-builder-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/sql-builder-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/stock-analyzer-ai-mcp",
+   "slug": "stock-analyzer-ai-mcp",
+   "description": "AI-powered stock analyzer ai MCP server for agents. Supports analyze stock, calculate ratios",
+   "version": "1.0.10",
+   "pypi": "stock-analyzer-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/stock-analyzer-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/string-utils-ai-mcp",
+   "slug": "string-utils-ai-mcp",
+   "description": "String Utils Ai tools for AI agents. Capabilities: slugify, camel to snake, truncate smart. Built",
+   "version": "1.0.11",
+   "pypi": "string-utils-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/string-utils-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/stripe-billing-mcp",
+   "slug": "stripe-billing-mcp",
+   "description": "stripe-billing-mcp MCP server by MEOK AI Labs",
+   "version": "1.0.4",
+   "pypi": "stripe-billing-mcp",
+   "repo": "https://github.com/CSOAI-ORG/stripe-billing-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/subscription-tracker-ai-mcp",
+   "slug": "subscription-tracker-ai-mcp",
+   "description": "MCP server for subscription tracker ai. Features add subscription, get total spend, list",
+   "version": "1.0.10",
+   "pypi": "subscription-tracker-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/subscription-tracker-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/summarizer-ai-mcp",
+   "slug": "summarizer-ai-mcp",
+   "description": "MCP server for summarizer ai. Features summarize text, extract key points, generate abstract. From",
+   "version": "1.0.11",
+   "pypi": "summarizer-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/summarizer-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/supply-chain-mcp",
+   "slug": "supply-chain-mcp",
+   "description": "Supply chain management and logistics tools for AI agents. Capabilities: shipment tracking",
+   "version": "1.0.9",
+   "pypi": "supply-chain-mcp",
+   "repo": "https://github.com/CSOAI-ORG/supply-chain-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/survey-builder-ai-mcp",
+   "slug": "survey-builder-ai-mcp",
+   "description": "AI-powered survey builder ai MCP server for agents. Supports create survey, validate questions",
+   "version": "1.0.9",
+   "pypi": "survey-builder-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/survey-builder-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/tax-calculator-ai-mcp",
+   "slug": "tax-calculator-ai-mcp",
+   "description": "AI-powered tax calculator ai MCP server for agents. Supports calculate income tax, calculate vat",
+   "version": "1.0.9",
+   "pypi": "tax-calculator-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/tax-calculator-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/test-case-generator-ai-mcp",
+   "slug": "test-case-generator-ai-mcp",
+   "description": "AI-powered test case generator ai MCP server for agents. Supports generate test cases, generate",
+   "version": "1.0.10",
+   "pypi": "test-case-generator-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/test-case-generator-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/text-stats-ai-mcp",
+   "slug": "text-stats-ai-mcp",
+   "description": "MCP server for text stats ai. Features word count, reading time, keyword density. From MEOK AI Labs.",
+   "version": "1.0.10",
+   "pypi": "text-stats-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/text-stats-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/time-tracker-ai-mcp",
+   "slug": "time-tracker-ai-mcp",
+   "description": "Time Tracker Ai tools for AI agents. Capabilities: start timer, stop timer, get report. Built by",
+   "version": "1.0.10",
+   "pypi": "time-tracker-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/time-tracker-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/tone-rewriter-ai-mcp",
+   "slug": "tone-rewriter-ai-mcp",
+   "description": "Tone Rewriter Ai MCP server. Tools: analyze tone, rewrite tone, compare tones. Built by MEOK AI",
+   "version": "1.0.10",
+   "pypi": "tone-rewriter-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/tone-rewriter-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/translation-ai-mcp",
+   "slug": "translation-ai-mcp",
+   "description": "Translation Ai automation via MCP. Includes translate text, detect language, check grammar. By MEOK",
+   "version": "1.0.10",
+   "pypi": "translation-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/translation-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/translator-pro-ai-mcp",
+   "slug": "translator-pro-ai-mcp",
+   "description": "AI-powered translator pro ai MCP server for agents. Supports translate text, detect language",
+   "version": "1.0.9",
+   "pypi": "translator-pro-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/translator-pro-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/trust-chain-mcp",
+   "slug": "trust-chain-mcp",
+   "description": "Trust Chain MCP server. Tools: create trust anchor, verify chain, add attestation. Built by MEOK AI",
+   "version": "1.0.9",
+   "pypi": "trust-chain-mcp",
+   "repo": "https://github.com/CSOAI-ORG/trust-chain-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/uk-ai-act-mcp",
+   "slug": "uk-ai-act-mcp",
+   "description": "UK AI regulation compliance tools for AI agents. Capabilities: UK risk classification, AISI",
+   "version": "1.0.9",
+   "pypi": "uk-ai-act-mcp",
+   "repo": "https://github.com/CSOAI-ORG/uk-ai-act-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/uk-ai-bill-compliance-mcp",
+   "slug": "uk-ai-bill-compliance-mcp",
+   "description": "UK AI Regulation Compliance MCP. Automates audits against the UK AI White Paper five principles ...",
+   "version": "1.0.6",
+   "pypi": "uk-ai-bill-compliance-mcp",
+   "repo": "https://github.com/CSOAI-ORG/uk-ai-bill-compliance-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/unit-converter-ai-mcp",
+   "slug": "unit-converter-ai-mcp",
+   "description": "AI-powered unit converter ai MCP server for agents. Supports convert length, convert weight",
+   "version": "1.0.10",
+   "pypi": "unit-converter-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/unit-converter-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/url-ai-mcp",
+   "slug": "url-ai-mcp",
+   "description": "Url Ai MCP server. Tools: parse url, shorten url data, check url safety. Built by MEOK AI Labs.",
+   "version": "1.0.10",
+   "pypi": "url-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/url-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/uuid-ai-mcp",
+   "slug": "uuid-ai-mcp",
+   "description": "AI-powered uuid ai MCP server for agents. Supports generate uuid, parse uuid, generate ulid. By",
+   "version": "1.0.10",
+   "pypi": "uuid-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/uuid-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/validator-ai-mcp",
+   "slug": "validator-ai-mcp",
+   "description": "AI-powered validator ai MCP server for agents. Supports validate json, validate email, validate",
+   "version": "1.0.10",
+   "pypi": "validator-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/validator-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/vector-knowledge-graph-mcp",
+   "slug": "vector-knowledge-graph-mcp",
+   "description": "AI-powered vector knowledge graph MCP server for agents. Supports add node, add edge, semantic node",
+   "version": "1.0.9",
+   "pypi": "vector-knowledge-graph-mcp",
+   "repo": "https://github.com/CSOAI-ORG/vector-knowledge-graph-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/video-editing-ai-mcp",
+   "slug": "video-editing-ai-mcp",
+   "description": "Video Editing Ai MCP server. Tools: split scenes, generate subtitles, thumbnail data. Built by MEOK",
+   "version": "1.0.9",
+   "pypi": "video-editing-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/video-editing-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/voice-audio-mcp",
+   "slug": "voice-audio-mcp",
+   "description": "Voice Audio MCP server. Tools: text to speech, list voices, transcribe. Built by MEOK AI Labs.",
+   "version": "1.0.9",
+   "pypi": "voice-audio-mcp",
+   "repo": "https://github.com/CSOAI-ORG/voice-audio-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/watermarking-authenticity-mcp",
+   "slug": "watermarking-authenticity-mcp",
+   "description": "EU AI Act Article 50 watermarking + C2PA 2.1 compliance. NEW: 2 December 2026 deadline (compress...",
+   "version": "1.2.2",
+   "pypi": "watermarking-authenticity-mcp",
+   "repo": "https://github.com/CSOAI-ORG/watermarking-authenticity-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/weather-ai-mcp",
+   "slug": "weather-ai-mcp",
+   "description": "Weather Ai tools for AI agents. Capabilities: get current conditions, get forecast, get historical",
+   "version": "1.0.10",
+   "pypi": "weather-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/weather-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/webhook-ai-mcp",
+   "slug": "webhook-ai-mcp",
+   "description": "Webhook Ai tools for AI agents. Capabilities: validate webhook signature, log webhook event, replay",
+   "version": "1.0.9",
+   "pypi": "webhook-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/webhook-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/workout-planner-ai-mcp",
+   "slug": "workout-planner-ai-mcp",
+   "description": "MCP server for workout planner ai. Features create workout, track progress, suggest exercises. From",
+   "version": "1.0.9",
+   "pypi": "workout-planner-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/workout-planner-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/writing-assistant-ai-mcp",
+   "slug": "writing-assistant-ai-mcp",
+   "description": "Writing Assistant Ai tools for AI agents. Capabilities: generate headlines, score readability",
+   "version": "1.0.10",
+   "pypi": "writing-assistant-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/writing-assistant-ai-mcp"
+  },
+  {
+   "name": "io.github.CSOAI-ORG/yaml-ai-mcp",
+   "slug": "yaml-ai-mcp",
+   "description": "AI-powered yaml ai MCP server for agents. Supports validate yaml, convert yaml json, lint yaml. By",
+   "version": "1.0.8",
+   "pypi": "yaml-ai-mcp",
+   "repo": "https://github.com/CSOAI-ORG/yaml-ai-mcp"
+  }
+ ]
+}
