@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>dora-compliance-mcp — install, connect in Claude/ChatGPT, pricing | openmoe.ai</title>
+<link rel="canonical" href="https://openmoe.ai/tools/dora-compliance-mcp.html" />
+<meta name="description" content="DORA (EU Digital Operational Resilience Act) compliance for AI agents. 5-pillar audit, incident ... Install via pip or MCP; free Apache-2.0 core; hosted signed tiers." />
+<link rel="icon" href="/favicon.ico" sizes="32x32">
+<meta name="theme-color" content="#0b0e14">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is dora-compliance-mcp?", "acceptedAnswer": {"@type": "Answer", "text": "DORA (EU Digital Operational Resilience Act) compliance for AI agents. 5-pillar audit, incident ... Part of the CSOAI governance fleet by MEOK AI Labs. Apache-2.0."}}, {"@type": "Question", "name": "How do I install dora-compliance-mcp?", "acceptedAnswer": {"@type": "Answer", "text": "pip install dora-compliance-mcp — or connect it as an MCP server in Claude, Cursor or ChatGPT. Listed in the official MCP Registry (io.github.CSOAI-ORG)."}}, {"@type": "Question", "name": "How much does it cost?", "acceptedAnswer": {"@type": "Answer", "text": "The core is free (Apache-2.0, self-host). Hosted + Ed25519-signed: Starter £29/mo, Pro £199/mo, Enterprise £1,499/mo, x402 pay-per-call, CSOAI Watchdog Certification £4,950 one-time."}}]}</script>
+<style>
+  :root { --bg:#0b0e14; --panel:#131822; --fg:#e6e9ef; --muted:#9aa4b2; --acc:#5b8cff; --acc2:#7dd3a8; --border:#222b3a; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; }
+  a { color:var(--acc); text-decoration:none; }
+  a:hover { text-decoration:underline; }
+  .wrap { max-width:920px; margin:0 auto; padding:0 20px; }
+  header { padding:64px 0 32px; border-bottom:1px solid var(--border); }
+  h1 { font-size:2.4rem; margin:0 0 8px; letter-spacing:-0.02em; }
+  .tag { color:var(--acc2); font-weight:600; }
+  .lead { font-size:1.2rem; color:var(--muted); max-width:680px; }
+  h2 { font-size:1.5rem; margin:48px 0 12px; letter-spacing:-0.01em; }
+  h3 { font-size:1.1rem; margin:24px 0 6px; }
+  section { border-bottom:1px solid var(--border); padding-bottom:24px; }
+  code, pre { font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; }
+  pre { background:var(--panel); border:1px solid var(--border); border-radius:10px; padding:16px; overflow-x:auto; font-size:0.9rem; }
+  code { background:var(--panel); padding:2px 6px; border-radius:5px; font-size:0.9em; }
+  pre code { background:none; padding:0; }
+  ul { padding-left:20px; }
+  table { width:100%; border-collapse:collapse; margin:12px 0; font-size:0.92rem; }
+  th, td { text-align:left; padding:8px 10px; border-bottom:1px solid var(--border); vertical-align:top; }
+  th { color:var(--muted); font-weight:600; }
+  .badges span { display:inline-block; background:var(--panel); border:1px solid var(--border); border-radius:999px; padding:3px 12px; margin:4px 6px 0 0; font-size:0.82rem; color:var(--muted); }
+  .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:14px; margin-top:12px; }
+  .card { background:var(--panel); border:1px solid var(--border); border-radius:10px; padding:14px 16px; }
+  .card h3 { margin-top:0; color:var(--fg); }
+  .card p { margin:6px 0 0; color:var(--muted); font-size:0.92rem; }
+  details { background:var(--panel); border:1px solid var(--border); border-radius:8px; padding:10px 14px; margin:8px 0; }
+  summary { cursor:pointer; font-weight:600; }
+  footer { padding:32px 0 64px; color:var(--muted); font-size:0.9rem; }
+  footer a { color:var(--fg); }
+  .cta { display:inline-block; background:var(--acc); color:#fff; padding:10px 18px; border-radius:8px; font-weight:600; margin-top:10px; }
+  .cta:hover { text-decoration:none; opacity:0.92; }
+</style>
+</head>
+<body>
+<header class="wrap"><h1>dora-compliance-mcp</h1><p class="lead">DORA (EU Digital Operational Resilience Act) compliance for AI agents. 5-pillar audit, incident ...</p></header>
+<div class="wrap">
+<section><h2>Install &amp; connect</h2>
+<pre><code>pip install dora-compliance-mcp
+# MCP (Claude Code / Cursor):
+claude mcp add dora-compliance-mcp -- dora-compliance-mcp</code></pre>
+<p>Listed in the <a href="https://registry.modelcontextprotocol.io">official MCP Registry</a> · v1.4.8 · <a href="https://github.com/CSOAI-ORG/dora-compliance-mcp">source</a> · Apache-2.0</p></section>
+<section><h2>Pricing</h2><p>Self-host: <strong>free forever</strong>. Hosted + signed receipts &amp; verify URLs: <a href="/#pricing">£29 / £199 / £1,499 ladder</a> · <a href="/x402.html">x402 pay-per-call</a> · CSOAI Watchdog Certification £4,950.</p></section>
+<section><h2>Why signed?</h2><p>Hosted calls return Ed25519, hash-chained receipts — engineering evidence for EU AI Act Articles 12 &amp; 15 (<a href="/art15.html">how</a>). Attestation layer: <a href="https://proofof.ai">proofof.ai</a>. Governed by <a href="https://csoai.org">CSOAI</a>.</p></section>
+<footer style="padding:32px 0;color:var(--muted)">By MEOK AI Labs / CSOAI · <a href="/catalogue.html">all 294 tools</a> · <a href="/">openmoe.ai</a></footer></div>
+</body>
+</html>
