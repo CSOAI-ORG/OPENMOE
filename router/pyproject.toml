@@ -1,0 +1,58 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "openmoe-router"
+version = "0.1.0"
+description = "Open-source Mixture-of-Experts inference router for the charcoal era."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "Apache-2.0" }
+authors = [{ name = "MEOK AI Labs", email = "nicholas@meok.ai" }]
+keywords = [
+    "moe",
+    "mixture-of-experts",
+    "inference",
+    "routing",
+    "open-source-ai",
+    "mcp",
+    "openmoe",
+    "deepseek",
+    "kimi",
+    "qwen",
+    "minimax",
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+    "httpx>=0.27.0",
+    "pydantic>=2.0",
+]
+
+[project.optional-dependencies]
+server = ["fastapi>=0.110", "uvicorn>=0.29"]
+mcp = ["mcp>=1.0.0"]
+bft = ["openmoe-bft>=0.1.0"]
+dev = ["pytest>=7.0", "pytest-asyncio>=0.23", "respx>=0.21"]
+
+[project.scripts]
+openmoe-router = "openmoe_router.cli:main"
+
+[project.urls]
+Homepage = "https://openmoe.ai"
+Repository = "https://github.com/CSOAI-ORG/openmoe/tree/main/router"
+
+[tool.hatch.build.targets.wheel]
+only-include = ["openmoe_router"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
